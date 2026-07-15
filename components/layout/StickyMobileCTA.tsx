@@ -11,7 +11,7 @@ export function StickyMobileCTA() {
       <div className="grid grid-cols-2 gap-2 p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
         <a
           href={telHref()}
-          className="inline-flex items-center justify-center gap-2 h-12 rounded-sm bg-ink text-cream text-[14.5px] font-medium tracking-wide active:bg-walnut"
+          className="inline-flex items-center justify-center gap-2 h-12 rounded-sm bg-ink text-cream text-[14.5px] font-medium tracking-wide transition-transform duration-150 active:bg-walnut active:scale-[0.97]"
           aria-label={`Call ${phoneDisplay()}`}
         >
           <Phone className="size-[16px]" aria-hidden strokeWidth={1.5} />
@@ -21,7 +21,7 @@ export function StickyMobileCTA() {
           href={whatsappHref("general")}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-2 h-12 rounded-sm bg-whatsapp text-white text-[14.5px] font-medium tracking-wide active:bg-whatsapp-deep"
+          className="inline-flex items-center justify-center gap-2 h-12 rounded-sm bg-whatsapp text-white text-[14.5px] font-medium tracking-wide transition-transform duration-150 active:bg-whatsapp-deep active:scale-[0.97]"
         >
           <MessageCircle className="size-[16px]" aria-hidden strokeWidth={1.5} />
           <span>WhatsApp</span>

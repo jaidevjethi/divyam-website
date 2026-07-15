@@ -84,7 +84,7 @@ export function PageHeader({
                   href={whatsappHref(ctaContext)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center justify-center gap-2.5 bg-whatsapp hover:bg-whatsapp-deep text-white font-semibold text-[14.5px] px-6 py-3.5 rounded-lg transition-all duration-200 shadow-sm hover:shadow hover:shadow-whatsapp/20 hover:-translate-y-0.5"
+                  className="group inline-flex items-center justify-center gap-2.5 bg-whatsapp hover:bg-whatsapp-deep text-white font-semibold text-[14.5px] px-6 py-3.5 rounded-lg transition-all duration-200 shadow-sm hover:shadow hover:shadow-whatsapp/20 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98]"
                 >
                   <MessageCircle className="size-4.5" aria-hidden strokeWidth={2} />
                   Book on WhatsApp

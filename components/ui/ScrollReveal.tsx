@@ -15,12 +15,14 @@ import { useEffect, useRef, type ReactNode } from "react";
 type Variant = "fade-up" | "fade-in" | "scale-in";
 
 const HIDDEN_TRANSFORM: Record<Variant, string> = {
-  "fade-up": "translateY(24px)",
+  "fade-up": "translateY(28px)",
   "fade-in": "none",
   "scale-in": "scale(0.97)",
 };
 
-const EASE = "cubic-bezier(0.25, 0.1, 0.25, 1)";
+/* Expo-out: fast start, long silky glide to rest — reads "crafted",
+   never "snappy template". */
+const EASE = "cubic-bezier(0.22, 1, 0.36, 1)";
 
 function reveal(el: HTMLElement, duration: number, delay: number) {
   el.style.transition = `opacity ${duration}s ${EASE} ${delay}s, transform ${duration}s ${EASE} ${delay}s`;
@@ -65,7 +67,7 @@ export function ScrollReveal({
   children,
   variant = "fade-up",
   delay = 0,
-  duration = 0.6,
+  duration = 0.75,
   className,
   viewportMargin = "-80px",
 }: Props) {
@@ -129,7 +131,7 @@ export function StaggerContainer({
     const io = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          items.forEach((item, i) => reveal(item, 0.5, i * staggerDelay));
+          items.forEach((item, i) => reveal(item, 0.65, i * staggerDelay));
           io.disconnect();
         }
       },

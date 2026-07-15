@@ -83,7 +83,7 @@ export function Header() {
               href={whatsappHref("general")}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 bg-whatsapp hover:bg-whatsapp-deep text-white text-[12.5px] font-semibold px-3.5 py-1.5 rounded-md transition-colors"
+              className="inline-flex items-center gap-1.5 bg-whatsapp hover:bg-whatsapp-deep text-white text-[12.5px] font-semibold px-3.5 py-1.5 rounded-md transition-[background-color,transform] duration-200 active:scale-[0.97]"
             >
               <MessageCircle className="size-3.5" aria-hidden strokeWidth={2} />
               Chat
@@ -106,7 +106,7 @@ export function Header() {
       {/* Mobile sheet */}
       <div
         className={cn(
-          "fixed inset-0 z-50 bg-ink/40 transition-opacity lg:hidden",
+          "fixed inset-0 z-50 bg-ink/40 transition-opacity duration-300 lg:hidden",
           open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         )}
         onClick={() => setOpen(false)}
@@ -114,7 +114,7 @@ export function Header() {
       />
       <aside
         className={cn(
-          "fixed top-0 right-0 z-50 h-full w-[88%] max-w-sm bg-cream border-l border-line transition-transform lg:hidden flex flex-col",
+          "fixed top-0 right-0 z-50 h-full w-[88%] max-w-sm bg-cream border-l border-line transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] lg:hidden flex flex-col",
           open ? "translate-x-0" : "translate-x-full"
         )}
         aria-label="Mobile menu"
@@ -165,7 +165,7 @@ export function Header() {
           <p className="label-caps">Direct Booking Channels</p>
           <a
             href={telHref()}
-            className="flex items-center justify-center gap-3 bg-ink hover:bg-ink-soft text-cream font-medium text-[14.5px] py-3.5 rounded-lg transition-colors"
+            className="flex items-center justify-center gap-3 bg-ink hover:bg-ink-soft text-cream font-medium text-[14.5px] py-3.5 rounded-lg transition-[background-color,transform] duration-200 active:scale-[0.98]"
           >
             <Phone className="size-4 text-terracotta" aria-hidden strokeWidth={2} />
             Call {phoneDisplay()}
@@ -174,7 +174,7 @@ export function Header() {
             href={whatsappHref("general")}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-3 bg-whatsapp hover:bg-whatsapp-deep text-white font-medium text-[14.5px] py-3.5 rounded-lg transition-colors shadow-sm"
+            className="flex items-center justify-center gap-3 bg-whatsapp hover:bg-whatsapp-deep text-white font-medium text-[14.5px] py-3.5 rounded-lg transition-[background-color,transform] duration-200 active:scale-[0.98] shadow-sm"
           >
             <MessageCircle className="size-4" aria-hidden strokeWidth={2} />
             WhatsApp {whatsappDisplay()}

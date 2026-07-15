@@ -76,11 +76,13 @@ function FAQItem({ q, a }: { q: string; a: string }) {
       </button>
       <div
         className={cn(
-          "overflow-hidden transition-[max-height,opacity] duration-300 ease-in-out",
-          open ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
+          "grid transition-[grid-template-rows,opacity] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]",
+          open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
         )}
       >
-        <p className="pb-5 pr-8 text-[15px] text-ink-soft leading-[1.7]">{a}</p>
+        <div className="overflow-hidden">
+          <p className="pb-5 pr-8 text-[15px] text-ink-soft leading-[1.7]">{a}</p>
+        </div>
       </div>
     </div>
   );

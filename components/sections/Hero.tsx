@@ -52,14 +52,14 @@ export function Hero() {
                   href={whatsappHref("general")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center justify-center gap-2.5 bg-gradient-to-br from-terracotta to-terracotta-deep text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),_0_4px_10px_-2px_rgba(154,52,18,0.35)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),_0_8px_20px_-3px_rgba(154,52,18,0.45)] font-semibold text-[15.5px] px-8 py-4 rounded-xl transition-all duration-200 hover:-translate-y-0.5"
+                  className="group inline-flex items-center justify-center gap-2.5 bg-gradient-to-br from-terracotta to-terracotta-deep text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),_0_4px_10px_-2px_rgba(154,52,18,0.35)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),_0_8px_20px_-3px_rgba(154,52,18,0.45)] font-semibold text-[15.5px] px-8 py-4 rounded-xl transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98]"
                 >
                   Book a Taxi
                   <ArrowRight className="size-4 group-hover:translate-x-0.5 transition-transform" aria-hidden strokeWidth={2} />
                 </a>
                 <a
                   href="/plan-your-trip"
-                  className="group inline-flex items-center justify-center gap-2.5 bg-paper border border-line-strong text-ink-soft shadow-sm hover:shadow-md hover:border-terracotta/30 hover:text-ink font-semibold text-[15.5px] px-8 py-4 rounded-xl transition-all duration-200 hover:-translate-y-0.5"
+                  className="group inline-flex items-center justify-center gap-2.5 bg-paper border border-line-strong text-ink-soft shadow-sm hover:shadow-md hover:border-terracotta/30 hover:text-ink font-semibold text-[15.5px] px-8 py-4 rounded-xl transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98]"
                 >
                   Plan a Multi-Day Trip
                 </a>
