@@ -91,18 +91,18 @@ export function ContactConversion({
             </ScrollReveal>
           </div>
 
-          {/* Premium Glassmorphic Booking Panel card */}
+          {/* Booking panel — solid card, espresso on the dark band */}
           <div className="lg:col-span-5 w-full">
             <ScrollReveal delay={0.2}>
               <div
-                className={`p-6 sm:p-8 rounded-2xl border backdrop-blur-md shadow-xl ${
+                className={`p-6 sm:p-8 rounded-2xl border shadow-xl ${
                   isDark
-                    ? "bg-terracotta-deep/50 border-white/20 text-cream"
-                    : "bg-cream/90 border-line text-ink"
+                    ? "bg-walnut-deep border-white/10 text-cream"
+                    : "bg-paper border-line text-ink"
                 }`}
               >
                 <div className="flex items-center gap-2 mb-6">
-                  <Sparkles className="size-4 text-marigold animate-pulse" />
+                  <Sparkles className="size-4 text-marigold" aria-hidden />
                   <span className="text-[12px] tracking-[0.15em] uppercase font-bold text-marigold-deep">
                     Book instantly
                   </span>

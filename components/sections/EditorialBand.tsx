@@ -41,10 +41,10 @@ export function EditorialBand({ src, alt, caption, aspect = "wide" }: Props) {
           
           {/* Faint stat overlay to make this a high-trust conversion micro-moment */}
           <div className="absolute bottom-6 left-6 right-6 lg:left-12 lg:right-12 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-3 pointer-events-none">
-            <span className="text-[12px] tracking-[0.2em] uppercase text-cream/90 font-medium bg-walnut/50 backdrop-blur-[2px] px-3 py-1 rounded">
+            <span className="text-[12px] tracking-[0.2em] uppercase text-cream/90 font-medium bg-walnut-deep/85 px-3 py-1 rounded">
               Local Varanasi operator
             </span>
-            <span className="text-[13px] sm:text-[14px] text-cream font-medium italic bg-walnut/50 backdrop-blur-[2px] px-4 py-1.5 rounded">
+            <span className="text-[13px] sm:text-[14px] text-cream font-medium italic bg-walnut-deep/85 px-4 py-1.5 rounded">
               Rated {business.googleRating.value}★ by {business.googleRating.count} travellers on Google
             </span>
           </div>

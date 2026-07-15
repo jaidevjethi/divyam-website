@@ -1,75 +1,112 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
 import { Logo } from "./Logo";
 import { primaryNav } from "@/lib/nav";
 import { telHref, whatsappHref, phoneDisplay, whatsappDisplay } from "@/lib/cta";
 import { cn } from "@/lib/utils";
 
+/**
+ * Editorial header — solid ivory bar with a gilt top edge and hairline
+ * bottom border. No glassmorphism: the bar is opaque, gains a soft
+ * elevation shadow once the page scrolls, and marks the active page.
+ */
 export function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const isActive = (href: string) =>
+    pathname === href || pathname.startsWith(`${href}/`);
 
   return (
-    <header className="sticky top-4 z-40 px-5 sm:px-8 lg:px-12 mb-4">
-      <div className="mx-auto w-full max-w-[1280px] bg-white/85 backdrop-blur-md rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] px-5 sm:px-8 flex h-[72px] items-center justify-between gap-4 xl:gap-6 transition-all duration-300">
-        <Logo />
+    <header className="sticky top-0 z-40">
+      {/* Gilt edge — a thread of brass woven across the top */}
+      <div
+        className="h-[3px] bg-gradient-to-r from-brass via-marigold to-terracotta"
+        aria-hidden
+      />
 
-        {/* Desktop nav — tighter tracking/gap at lg, full at xl, never wraps */}
-        <nav
-          className="hidden lg:flex items-center gap-5 xl:gap-8 ml-auto whitespace-nowrap"
-          aria-label="Primary"
-        >
-          {primaryNav.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-[11.5px] tracking-[0.1em] xl:tracking-[0.18em] uppercase text-ink-soft hover:text-terracotta font-semibold transition-colors duration-200"
+      <div
+        className={cn(
+          "bg-cream border-b border-line transition-shadow duration-300",
+          scrolled && "shadow-[0_12px_32px_-16px_rgba(29,23,16,0.18)]"
+        )}
+      >
+        <div className="mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-12 flex h-[72px] items-center justify-between gap-4 xl:gap-6">
+          <Logo />
+
+          {/* Desktop nav — tighter tracking/gap at lg, full at xl, never wraps */}
+          <nav
+            className="hidden lg:flex items-center gap-5 xl:gap-8 ml-auto whitespace-nowrap"
+            aria-label="Primary"
+          >
+            {primaryNav.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                aria-current={isActive(link.href) ? "page" : undefined}
+                className={cn(
+                  "text-[11.5px] tracking-[0.1em] xl:tracking-[0.18em] uppercase font-semibold transition-colors duration-200 border-b-2 pb-1",
+                  isActive(link.href)
+                    ? "text-terracotta border-terracotta"
+                    : "text-ink-soft border-transparent hover:text-terracotta"
+                )}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Desktop phone & WhatsApp CTA pair — number text only at xl */}
+          <div className="hidden md:flex items-center pl-4 xl:pl-6 border-l border-line gap-3 xl:gap-4 shrink-0">
+            <a
+              href={telHref()}
+              className="group inline-flex items-center gap-2 text-[14px] text-ink hover:text-terracotta transition-colors"
+              aria-label={`Call ${phoneDisplay()}`}
             >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+              <Phone className="size-3.5 text-terracotta" aria-hidden strokeWidth={2} />
+              <span className="font-semibold lg:hidden xl:inline">{phoneDisplay()}</span>
+            </a>
 
-        {/* Desktop phone & WhatsApp CTA pair — number text only at xl */}
-        <div className="hidden md:flex items-center pl-4 xl:pl-6 border-l border-line gap-3 xl:gap-4 shrink-0">
-          <a
-            href={telHref()}
-            className="group inline-flex items-center gap-2 text-[14px] text-ink hover:text-terracotta transition-colors"
-            aria-label={`Call ${phoneDisplay()}`}
-          >
-            <Phone className="size-3.5 text-terracotta" aria-hidden strokeWidth={2} />
-            <span className="font-semibold lg:hidden xl:inline">{phoneDisplay()}</span>
-          </a>
+            <a
+              href={whatsappHref("general")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 bg-whatsapp hover:bg-whatsapp-deep text-white text-[12.5px] font-semibold px-3.5 py-1.5 rounded-md transition-colors"
+            >
+              <MessageCircle className="size-3.5" aria-hidden strokeWidth={2} />
+              Chat
+            </a>
+          </div>
 
-          <a
-            href={whatsappHref("general")}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 bg-whatsapp hover:bg-whatsapp-deep text-white text-[12.5px] font-semibold px-3.5 py-1.5 rounded-md transition-colors"
+          {/* Mobile menu trigger */}
+          <button
+            type="button"
+            onClick={() => setOpen(true)}
+            className="lg:hidden inline-flex items-center justify-center size-10 -mr-2 text-ink"
+            aria-label="Open menu"
+            aria-expanded={open}
           >
-            <MessageCircle className="size-3.5" aria-hidden strokeWidth={2} />
-            Chat
-          </a>
+            <Menu className="size-5" aria-hidden strokeWidth={1.5} />
+          </button>
         </div>
-
-        {/* Mobile menu trigger */}
-        <button
-          type="button"
-          onClick={() => setOpen(true)}
-          className="lg:hidden inline-flex items-center justify-center size-10 -mr-2 text-ink"
-          aria-label="Open menu"
-          aria-expanded={open}
-        >
-          <Menu className="size-5" aria-hidden strokeWidth={1.5} />
-        </button>
       </div>
 
       {/* Mobile sheet */}
       <div
         className={cn(
-          "fixed inset-0 z-50 bg-ink/30 transition-opacity lg:hidden",
+          "fixed inset-0 z-50 bg-ink/40 transition-opacity lg:hidden",
           open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         )}
         onClick={() => setOpen(false)}
@@ -110,7 +147,11 @@ export function Header() {
                 <Link
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block py-4 font-serif text-[22px] font-bold text-ink border-b border-line hover:text-terracotta"
+                  aria-current={isActive(link.href) ? "page" : undefined}
+                  className={cn(
+                    "block py-4 font-serif text-[22px] font-bold border-b border-line hover:text-terracotta",
+                    isActive(link.href) ? "text-terracotta" : "text-ink"
+                  )}
                 >
                   {link.label}
                 </Link>
@@ -118,7 +159,7 @@ export function Header() {
             ))}
           </ul>
         </nav>
-        
+
         {/* Mobile menu bottom action center */}
         <div className="px-6 py-6 border-t border-line bg-cream-deep/60 flex flex-col gap-4">
           <p className="label-caps">Direct Booking Channels</p>

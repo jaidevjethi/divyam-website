@@ -6,7 +6,7 @@ export function StickyMobileCTA() {
     <div
       role="region"
       aria-label="Quick contact"
-      className="md:hidden fixed inset-x-0 bottom-0 z-30 bg-cream/95 backdrop-blur border-t border-line"
+      className="md:hidden fixed inset-x-0 bottom-0 z-30 bg-cream border-t border-line-strong shadow-[0_-8px_24px_-12px_rgba(29,23,16,0.15)]"
     >
       <div className="grid grid-cols-2 gap-2 p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
         <a

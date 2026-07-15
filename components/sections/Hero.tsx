@@ -59,7 +59,7 @@ export function Hero() {
                 </a>
                 <a
                   href="/plan-your-trip"
-                  className="group inline-flex items-center justify-center gap-2.5 bg-white/80 backdrop-blur-md border border-line text-ink-soft shadow-sm hover:shadow-md hover:border-line-strong hover:text-ink font-semibold text-[15.5px] px-8 py-4 rounded-xl transition-all duration-200 hover:-translate-y-0.5"
+                  className="group inline-flex items-center justify-center gap-2.5 bg-paper border border-line-strong text-ink-soft shadow-sm hover:shadow-md hover:border-terracotta/30 hover:text-ink font-semibold text-[15.5px] px-8 py-4 rounded-xl transition-all duration-200 hover:-translate-y-0.5"
                 >
                   Plan a Multi-Day Trip
                 </a>
