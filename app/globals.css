@@ -1,26 +1,382 @@
 @import "tailwindcss";
 
+/* =========================================================
+   Divyam Tours — Vibrant Warm Light Mode
+   Clean warm whites, high-contrast warm charcoal text,
+   terracotta as the single loud accent.
+   ========================================================= */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Surfaces — warm off-whites, not clinical white */
+  --color-cream: #fdfcfa;        /* Warm near-white base */
+  --color-cream-deep: #f7f5f1;   /* Warm stone for banded sections */
+  --color-paper: #ffffff;        /* Elevated cards */
+
+  /* Text — warm charcoal (stone), not blue-black */
+  --color-ink: #1c1917;          /* Stone-900 */
+  --color-ink-soft: #57534e;     /* Stone-600 */
+  --color-mist: #a8a29e;         /* Stone-400 for tertiary */
+
+  /* Borders */
+  --color-line: #e7e5e4;         /* Stone-200 */
+  --color-line-strong: #d6d3d1;  /* Stone-300 */
+
+  /* Sindoor — transformed to a vibrant, electric sunset red/orange */
+  --color-sindoor: #f43f5e;      /* Rose-500 */
+  --color-sindoor-deep: #e11d48; /* Rose-600 */
+  --color-sindoor-soft: #ffe4e6; /* Rose-100 */
+
+  /* Marigold — vibrant amber for secondary warmth */
+  --color-marigold: #f59e0b;     /* Amber-500 */
+  --color-marigold-deep: #d97706;/* Amber-600 */
+  --color-marigold-soft: #fef3c7;/* Amber-100 */
+
+  /* Brass — small details */
+  --color-brass: #eab308;        /* Yellow-500 */
+  --color-brass-deep: #ca8a04;
+
+  /* Walnut — premium warm darks */
+  --color-walnut: #292524;       /* Stone-800 */
+  --color-walnut-deep: #1c1917;  /* Stone-900 */
+
+  /* Terracotta — primary CTA color (Vibrant Orange) */
+  --color-terracotta: #f97316;   /* Orange-500 */
+  --color-terracotta-deep: #ea580c;/* Orange-600 */
+  --color-terracotta-soft: #ffedd5;/* Orange-100 */
+
+  /* Slate — trust / header / secondary (warmed to stone) */
+  --color-slate: #44403c;        /* Stone-700 */
+  --color-slate-deep: #292524;   /* Stone-800 */
+  --color-slate-soft: #f5f5f4;   /* Stone-100 */
+
+  /* Status — official WhatsApp brand green, used everywhere */
+  --color-whatsapp: #25d366;
+  --color-whatsapp-deep: #1da851;
+
+  /* Back-compat aliases */
+  --color-ivory: var(--color-cream);
+  --color-limestone: var(--color-cream-deep);
+  --color-charcoal: var(--color-ink);
+  --color-night: var(--color-walnut-deep);
+  --color-ganga: var(--color-sindoor);
+  --color-ganga-deep: var(--color-sindoor-deep);
+  --color-ganga-soft: var(--color-sindoor-soft);
+
+  /* 12-column grid gutters */
+  --grid-gutter: 24px;
+  --grid-gutter-lg: 32px;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-cream: var(--color-cream);
+  --color-cream-deep: var(--color-cream-deep);
+  --color-paper: var(--color-paper);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-mist: var(--color-mist);
+  --color-line: var(--color-line);
+  --color-line-strong: var(--color-line-strong);
+  --color-sindoor: var(--color-sindoor);
+  --color-sindoor-deep: var(--color-sindoor-deep);
+  --color-sindoor-soft: var(--color-sindoor-soft);
+  --color-marigold: var(--color-marigold);
+  --color-marigold-deep: var(--color-marigold-deep);
+  --color-marigold-soft: var(--color-marigold-soft);
+  --color-brass: var(--color-brass);
+  --color-brass-deep: var(--color-brass-deep);
+  --color-walnut: var(--color-walnut);
+  --color-walnut-deep: var(--color-walnut-deep);
+  --color-terracotta: var(--color-terracotta);
+  --color-terracotta-deep: var(--color-terracotta-deep);
+  --color-terracotta-soft: var(--color-terracotta-soft);
+  --color-slate: var(--color-slate);
+  --color-slate-deep: var(--color-slate-deep);
+  --color-slate-soft: var(--color-slate-soft);
+  --color-whatsapp: var(--color-whatsapp);
+  --color-whatsapp-deep: var(--color-whatsapp-deep);
+
+  /* aliases */
+  --color-ivory: var(--color-cream);
+  --color-limestone: var(--color-cream-deep);
+  --color-charcoal: var(--color-ink);
+  --color-night: var(--color-walnut-deep);
+  --color-ganga: var(--color-sindoor);
+  --color-ganga-deep: var(--color-sindoor-deep);
+  --color-ganga-soft: var(--color-sindoor-soft);
+
+  --font-serif: var(--font-fraunces); /* Real display serif for headlines */
+  --font-sans: var(--font-inter);
+
+  --breakpoint-3xl: 1440px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* =========================================================
+   Base
+   ========================================================= */
+html {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "cv11", "ss01";
+  line-height: 1.6;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif), ui-serif, Georgia, serif;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+  line-height: 1.1;
+}
+h1, h2 { font-weight: 640; letter-spacing: -0.02em; }
+h3 { font-weight: 600; }
+
+/* Accent word in headlines — solid terracotta by default (utilities may
+   override on dark surfaces). Gradient is reserved for the homepage hero. */
+@layer base {
+  em.editorial {
+    font-style: normal;
+    font-weight: 700;
+    color: var(--color-terracotta);
+  }
+}
+
+/* =========================================================
+   Editorial display sizing — fluid type scale
+   ========================================================= */
+.text-display-xl {
+  font-size: clamp(2.75rem, 8vw, 6.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+.text-display-lg {
+  font-size: clamp(2.25rem, 5.5vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+.text-display-md {
+  font-size: clamp(1.75rem, 3.5vw, 3.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.text-display-sm {
+  font-size: clamp(1.4rem, 2.5vw, 2.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+/* =========================================================
+   Editorial utilities
+   ========================================================= */
+.label-caps {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-mist);
+}
+
+.editorial-number {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1;
+  color: var(--color-line-strong);
+  letter-spacing: -0.04em;
+}
+
+.drop-cap::first-letter {
+  font-family: var(--font-serif);
+  font-weight: 800;
+  font-size: 3.5em;
+  float: left;
+  line-height: 0.8;
+  margin-right: 0.08em;
+  margin-top: 0.05em;
+  color: var(--color-terracotta);
+}
+
+.hairline {
+  border: 0;
+  height: 1px;
+  background: var(--color-line);
+}
+
+.pull-quote {
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.link-editorial {
+  color: var(--color-ink);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-terracotta-soft);
+  padding-bottom: 0.1em;
+  transition: all 200ms ease-out;
+}
+.link-editorial:hover {
+  color: var(--color-terracotta);
+  border-bottom-color: var(--color-terracotta);
+}
+
+/* Tag chip */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: 1px solid var(--color-marigold-soft);
+  color: var(--color-marigold-deep);
+  border-radius: 999px;
+  background: var(--color-marigold-soft);
+  line-height: 1.4;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+.chip-quiet {
+  border-color: var(--color-line);
+  color: var(--color-ink-soft);
+  background: var(--color-cream);
+}
+
+/* Image wrapper */
+.img-wrap {
+  background: var(--color-cream-deep);
+  overflow: hidden;
+  border-radius: 12px; /* modern rounded corners */
+  box-shadow: 0 4px 20px -2px rgba(0,0,0,0.05);
+}
+
+/* Selection */
+::selection {
+  background: var(--color-terracotta);
+  color: var(--color-cream);
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Radix Accordion height animation */
+@keyframes accordion-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 9999;
+  padding: 0.75rem 1rem;
+  background: var(--color-ink);
+  color: var(--color-cream);
+  font-weight: 600;
+  border-radius: 8px;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+/* =========================================================
+   Layout system
+   ========================================================= */
+@layer components {
+  /* The site's one 12-column grid: single column below lg, 12 tracks with
+     the canonical gutter at lg+. Column placement via col-span-* utilities;
+     row gap overridable with gap-y-* utilities. */
+  .grid-12 {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: var(--grid-gutter);
+    row-gap: 2.5rem;
+  }
+  @media (min-width: 1024px) {
+    .grid-12 {
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: var(--grid-gutter-lg);
+    }
+  }
+
+  /* Section vertical rhythm — exactly two scales sitewide. */
+  .section {
+    padding-top: 5rem;      /* py-20 */
+    padding-bottom: 5rem;
+  }
+  .section-tight {
+    padding-top: 3.5rem;    /* py-14 */
+    padding-bottom: 3.5rem;
+  }
+  @media (min-width: 640px) {
+    .section {
+      padding-top: 7rem;    /* sm:py-28 */
+      padding-bottom: 7rem;
+    }
+    .section-tight {
+      padding-top: 5rem;    /* sm:py-20 */
+      padding-bottom: 5rem;
+    }
+  }
+}
+
+[id], section, h1, h2, h3, h4, h5, h6 {
+  scroll-margin-top: 100px;
+}
+
+/* Motion / Interaction Utilities */
+.transition-smooth {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+.transition-hover {
+  transition-property: transform, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.4);
 }

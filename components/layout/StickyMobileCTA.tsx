@@ -1,0 +1,32 @@
+import { Phone, MessageCircle } from "lucide-react";
+import { telHref, whatsappHref, phoneDisplay } from "@/lib/cta";
+
+export function StickyMobileCTA() {
+  return (
+    <div
+      role="region"
+      aria-label="Quick contact"
+      className="md:hidden fixed inset-x-0 bottom-0 z-30 bg-cream/95 backdrop-blur border-t border-line"
+    >
+      <div className="grid grid-cols-2 gap-2 p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
+        <a
+          href={telHref()}
+          className="inline-flex items-center justify-center gap-2 h-12 rounded-sm bg-ink text-cream text-[14.5px] font-medium tracking-wide active:bg-walnut"
+          aria-label={`Call ${phoneDisplay()}`}
+        >
+          <Phone className="size-[16px]" aria-hidden strokeWidth={1.5} />
+          <span>Call</span>
+        </a>
+        <a
+          href={whatsappHref("general")}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 h-12 rounded-sm bg-whatsapp text-white text-[14.5px] font-medium tracking-wide active:bg-whatsapp-deep"
+        >
+          <MessageCircle className="size-[16px]" aria-hidden strokeWidth={1.5} />
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  );
+}
