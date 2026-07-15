@@ -8,11 +8,11 @@ const buttonStyles = cva(
     variants: {
       variant: {
         primary:
-          "bg-gradient-to-br from-terracotta to-terracotta-deep text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),_0_4px_10px_-2px_rgba(234,88,12,0.4)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),_0_8px_20px_-3px_rgba(234,88,12,0.5)] hover:-translate-y-0.5 hover:brightness-110",
+          "bg-gradient-to-br from-terracotta to-terracotta-deep text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),_0_4px_10px_-2px_rgba(154,52,18,0.35)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),_0_8px_20px_-3px_rgba(154,52,18,0.45)] hover:-translate-y-0.5 hover:brightness-110",
         whatsapp:
-          "bg-gradient-to-br from-whatsapp to-whatsapp-deep text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),_0_4px_10px_-2px_rgba(16,185,129,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),_0_8px_20px_-3px_rgba(16,185,129,0.4)] hover:-translate-y-0.5 hover:brightness-110",
+          "bg-gradient-to-br from-whatsapp to-whatsapp-deep text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),_0_4px_10px_-2px_rgba(29,168,81,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),_0_8px_20px_-3px_rgba(29,168,81,0.4)] hover:-translate-y-0.5 hover:brightness-110",
         secondary:
-          "bg-gradient-to-br from-orange-50 to-amber-50 text-orange-900 border border-orange-200 shadow-sm hover:border-orange-300 hover:text-orange-950 hover:shadow-md hover:-translate-y-0.5",
+          "bg-gradient-to-br from-terracotta-soft/70 to-marigold-soft/60 text-terracotta-deep border border-terracotta-soft shadow-sm hover:border-terracotta/30 hover:text-ink hover:shadow-md hover:-translate-y-0.5",
         ghost: "text-ink-soft hover:text-ink hover:bg-slate-soft/50",
         link: "text-terracotta underline-offset-4 hover:underline p-0 h-auto",
       },

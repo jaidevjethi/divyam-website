@@ -180,7 +180,7 @@ export function RoutePageTemplate({ route }: Props) {
                 <StaggerItem key={r.slug}>
                   <Link
                     href={`/routes/${r.slug}`}
-                    className="group flex flex-col bg-white rounded-2xl shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-line hover:border-orange-200 hover:-translate-y-1 transition-all duration-300 overflow-hidden h-full"
+                    className="group flex flex-col bg-white rounded-2xl shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-line hover:border-terracotta/25 hover:-translate-y-1 transition-all duration-300 overflow-hidden h-full"
                   >
                     <div className="relative aspect-[16/9] w-full bg-cream-deep overflow-hidden">
                       <Image

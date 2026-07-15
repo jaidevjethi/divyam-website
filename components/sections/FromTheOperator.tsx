@@ -6,7 +6,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export function FromTheOperator() {
   return (
-    <section className="section bg-orange-50/40">
+    <section className="section bg-terracotta-soft/40">
       <Container width="default">
         <div className="grid-12">
           

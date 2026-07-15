@@ -65,7 +65,7 @@ export default function TourPackagesPage() {
               <article
                 key={pkg.slug}
                 id={pkg.slug}
-                className="group relative grid grid-cols-12 gap-y-6 lg:gap-y-0 gap-x-6 lg:gap-x-8 p-8 lg:p-12 border border-line hover:border-orange-200 rounded-2xl hover:bg-white hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)] transition-all duration-300 mb-8 overflow-hidden bg-cream-deep/20"
+                className="group relative grid grid-cols-12 gap-y-6 lg:gap-y-0 gap-x-6 lg:gap-x-8 p-8 lg:p-12 border border-line hover:border-terracotta/25 rounded-2xl hover:bg-white hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)] transition-all duration-300 mb-8 overflow-hidden bg-cream-deep/20"
               >
                 <div className="col-span-12 lg:col-span-4">
                   <div className="img-wrap relative aspect-[4/5] w-full overflow-hidden">

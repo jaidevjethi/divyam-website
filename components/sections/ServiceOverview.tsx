@@ -69,12 +69,12 @@ export function ServiceOverview() {
             <StaggerItem key={s.n}>
               <Link
                 href={s.href}
-                className="group relative grid grid-cols-12 gap-x-6 lg:gap-x-8 items-center py-12 lg:py-16 border-b border-line hover:bg-orange-50/30 transition-colors overflow-hidden"
+                className="group relative grid grid-cols-12 gap-x-6 lg:gap-x-8 items-center py-12 lg:py-16 border-b border-line hover:bg-terracotta-soft/25 transition-colors overflow-hidden"
               >
 
                 {/* Mobile: show image inline */}
                 <div className="col-span-10 lg:hidden mb-6 relative">
-                  <span className="absolute -top-10 -left-4 text-[120px] font-bold text-orange-50/60 leading-none z-0 pointer-events-none select-none">
+                  <span className="absolute -top-10 -left-4 text-[120px] font-bold text-terracotta-soft/70 leading-none z-0 pointer-events-none select-none">
                     {s.n}
                   </span>
                   <div className="img-wrap relative aspect-[16/9] w-full rounded-2xl shadow-sm overflow-hidden z-10">
@@ -89,7 +89,7 @@ export function ServiceOverview() {
                 </div>
 
                 <div className="col-span-10 lg:col-span-4 relative z-10">
-                  <span className="hidden lg:block absolute -top-12 -left-8 text-[140px] font-bold text-orange-50/60 leading-none z-0 pointer-events-none select-none">
+                  <span className="hidden lg:block absolute -top-12 -left-8 text-[140px] font-bold text-terracotta-soft/70 leading-none z-0 pointer-events-none select-none">
                     {s.n}
                   </span>
                   <div className="relative z-10">

@@ -52,7 +52,7 @@ export function Hero() {
                   href={whatsappHref("general")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center justify-center gap-2.5 bg-gradient-to-br from-terracotta to-terracotta-deep text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),_0_4px_10px_-2px_rgba(234,88,12,0.4)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),_0_8px_20px_-3px_rgba(234,88,12,0.5)] font-semibold text-[15.5px] px-8 py-4 rounded-xl transition-all duration-200 hover:-translate-y-0.5"
+                  className="group inline-flex items-center justify-center gap-2.5 bg-gradient-to-br from-terracotta to-terracotta-deep text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),_0_4px_10px_-2px_rgba(154,52,18,0.35)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),_0_8px_20px_-3px_rgba(154,52,18,0.45)] font-semibold text-[15.5px] px-8 py-4 rounded-xl transition-all duration-200 hover:-translate-y-0.5"
                 >
                   Book a Taxi
                   <ArrowRight className="size-4 group-hover:translate-x-0.5 transition-transform" aria-hidden strokeWidth={2} />
@@ -67,15 +67,15 @@ export function Hero() {
 
               {/* Micro-trust strip below CTAs */}
               <div className="mt-8 flex flex-wrap items-center gap-4 text-[13px] text-ink-soft">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-50 border border-orange-100 shadow-sm">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-terracotta-soft/60 border border-terracotta-soft shadow-sm">
                   <CheckCircle2 className="size-4 text-terracotta" aria-hidden strokeWidth={2.5} />
                   Reply within minutes
                 </span>
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-50 border border-orange-100 shadow-sm">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-terracotta-soft/60 border border-terracotta-soft shadow-sm">
                   <CheckCircle2 className="size-4 text-terracotta" aria-hidden strokeWidth={2.5} />
                   No app download needed
                 </span>
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-50 border border-orange-100 shadow-sm">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-terracotta-soft/60 border border-terracotta-soft shadow-sm">
                   <CheckCircle2 className="size-4 text-terracotta" aria-hidden strokeWidth={2.5} />
                   Same person, whole trip
                 </span>
@@ -99,7 +99,7 @@ export function Hero() {
           {/* Photo aside */}
           <div className="lg:col-span-5 relative">
             <ScrollReveal variant="scale-in" delay={0.2}>
-              <div className="img-wrap relative aspect-[3/4] w-full rounded-2xl shadow-[0_20px_60px_-15px_rgba(249,115,22,0.2)] border border-line/50">
+              <div className="img-wrap relative aspect-[3/4] w-full rounded-2xl shadow-[0_20px_60px_-15px_rgba(154,52,18,0.18)] border border-line/50">
                 <Image
                   src={business.heroAsideImage}
                   alt={business.heroAsideImageAlt}

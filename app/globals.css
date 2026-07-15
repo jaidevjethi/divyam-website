@@ -1,53 +1,59 @@
 @import "tailwindcss";
 
 /* =========================================================
-   Divyam Tours — Vibrant Warm Light Mode
-   Clean warm whites, high-contrast warm charcoal text,
-   terracotta as the single loud accent.
+   Divyam Tours — "Banarasi silk & brass"
+   Creamy ivory surfaces, espresso ink, burnished rust
+   accent, old-gold details. Premium warmth, no neon.
    ========================================================= */
 
 :root {
-  /* Surfaces — warm off-whites, not clinical white */
-  --color-cream: #fdfcfa;        /* Warm near-white base */
-  --color-cream-deep: #f7f5f1;   /* Warm stone for banded sections */
+  /* =====================================================
+     "Banarasi silk & brass" — premium warm palette.
+     Ivory surfaces, espresso ink, burnished rust accent,
+     old gold details, silk-red reserved for the hero.
+     ===================================================== */
+
+  /* Surfaces — creamy ivory, not clinical white */
+  --color-cream: #fbf8f3;        /* Warm ivory base */
+  --color-cream-deep: #f4eee4;   /* Parchment for banded sections */
   --color-paper: #ffffff;        /* Elevated cards */
 
-  /* Text — warm charcoal (stone), not blue-black */
-  --color-ink: #1c1917;          /* Stone-900 */
-  --color-ink-soft: #57534e;     /* Stone-600 */
-  --color-mist: #a8a29e;         /* Stone-400 for tertiary */
+  /* Text — warm espresso, not blue-black */
+  --color-ink: #221c15;          /* Espresso */
+  --color-ink-soft: #5b5247;     /* Warm taupe */
+  --color-mist: #a2988a;         /* Warm greige for tertiary */
 
   /* Borders */
-  --color-line: #e7e5e4;         /* Stone-200 */
-  --color-line-strong: #d6d3d1;  /* Stone-300 */
+  --color-line: #eae3d6;         /* Parchment line */
+  --color-line-strong: #d9cfbe;  /* Deeper parchment */
 
-  /* Sindoor — transformed to a vibrant, electric sunset red/orange */
-  --color-sindoor: #f43f5e;      /* Rose-500 */
-  --color-sindoor-deep: #e11d48; /* Rose-600 */
-  --color-sindoor-soft: #ffe4e6; /* Rose-100 */
+  /* Sindoor — deep Banarasi silk red (hero gradient + rare moments) */
+  --color-sindoor: #be123c;      /* Silk red */
+  --color-sindoor-deep: #9f1239; /* Deep silk */
+  --color-sindoor-soft: #fbe7e9;
 
-  /* Marigold — vibrant amber for secondary warmth */
-  --color-marigold: #f59e0b;     /* Amber-500 */
-  --color-marigold-deep: #d97706;/* Amber-600 */
-  --color-marigold-soft: #fef3c7;/* Amber-100 */
+  /* Marigold — old gold, not neon amber */
+  --color-marigold: #c9952c;     /* Old gold */
+  --color-marigold-deep: #a3761a;/* Deep gold */
+  --color-marigold-soft: #f7eed9;/* Gold-tinted parchment */
 
   /* Brass — small details */
-  --color-brass: #eab308;        /* Yellow-500 */
-  --color-brass-deep: #ca8a04;
+  --color-brass: #b08d3f;
+  --color-brass-deep: #8f7020;
 
-  /* Walnut — premium warm darks */
-  --color-walnut: #292524;       /* Stone-800 */
-  --color-walnut-deep: #1c1917;  /* Stone-900 */
+  /* Walnut — premium warm darks (espresso, never blue) */
+  --color-walnut: #2a231c;
+  --color-walnut-deep: #1d1710;
 
-  /* Terracotta — primary CTA color (Vibrant Orange) */
-  --color-terracotta: #f97316;   /* Orange-500 */
-  --color-terracotta-deep: #ea580c;/* Orange-600 */
-  --color-terracotta-soft: #ffedd5;/* Orange-100 */
+  /* Terracotta — primary accent: burnished rust, not startup orange */
+  --color-terracotta: #c2410c;   /* Burnished rust */
+  --color-terracotta-deep: #9a3412;/* Deep rust */
+  --color-terracotta-soft: #f8e8dc;/* Clay tint */
 
-  /* Slate — trust / header / secondary (warmed to stone) */
-  --color-slate: #44403c;        /* Stone-700 */
-  --color-slate-deep: #292524;   /* Stone-800 */
-  --color-slate-soft: #f5f5f4;   /* Stone-100 */
+  /* Slate — trust / secondary UI (warm taupe-stone) */
+  --color-slate: #4a4238;
+  --color-slate-deep: #2e2820;
+  --color-slate-soft: #f1ebe1;
 
   /* Status — official WhatsApp brand green, used everywhere */
   --color-whatsapp: #25d366;
@@ -228,7 +234,7 @@ h3 { font-weight: 600; }
   border-bottom-color: var(--color-terracotta);
 }
 
-/* Tag chip */
+/* Tag chip — flat old-gold on parchment, hairline border */
 .chip {
   display: inline-flex;
   align-items: center;
@@ -236,13 +242,12 @@ h3 { font-weight: 600; }
   padding: 0.35rem 0.75rem;
   font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.02em;
-  border: 1px solid var(--color-marigold-soft);
+  letter-spacing: 0.04em;
+  border: 1px solid color-mix(in srgb, var(--color-marigold) 30%, transparent);
   color: var(--color-marigold-deep);
   border-radius: 999px;
   background: var(--color-marigold-soft);
   line-height: 1.4;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
 .chip-quiet {
   border-color: var(--color-line);
@@ -378,5 +383,5 @@ h3 { font-weight: 600; }
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 .hover-glow:hover {
-  box-shadow: 0 0 20px rgba(249, 115, 22, 0.4);
+  box-shadow: 0 0 20px rgba(194, 65, 12, 0.3);
 }

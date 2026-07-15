@@ -14,7 +14,7 @@ export function Testimonials() {
   }
 
   return (
-    <section className="section bg-orange-50/50">
+    <section className="section bg-terracotta-soft/40">
       <Container width="wide">
         <ScrollReveal>
           <div className="mb-16 max-w-2xl">
