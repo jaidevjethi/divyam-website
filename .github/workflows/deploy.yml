@@ -31,9 +31,10 @@ jobs:
       - name: Build static export
         run: npm run build
         env:
-          # Project pages are served from /<repo>; drop this when moving
+          # Project pages are served from /<repo>; drop BOTH when moving
           # to the custom domain (divyamtours.com).
           BASE_PATH: /${{ github.event.repository.name }}
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
 
       - name: Disable Jekyll
         run: touch out/.nojekyll
