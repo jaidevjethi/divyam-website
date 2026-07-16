@@ -15,11 +15,11 @@ export function FromTheOperator() {
             <ScrollReveal>
               <div className="img-wrap relative aspect-square w-full max-w-[220px] overflow-hidden rounded-xl border border-line/40 shadow-sm">
                 <Image
-                  src="/images/operator-detail.webp"
-                  alt="Brass details, a small quiet moment"
+                  src="/images/operator-chai.webp"
+                  alt="Kulhad chai and marigolds on the dashboard, ghats at dawn through the windshield"
                   fill
                   sizes={imagePresets.operator.sizes}
-                  className="object-cover grayscale-[20%]"
+                  className="object-cover"
                 />
               </div>
               <p className="label-caps mt-6">A note from us</p>

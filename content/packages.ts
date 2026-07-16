@@ -99,7 +99,7 @@ export const packages: Package[] = [
     guideOption: "Optional guide for orientation in the temple area.",
     summary:
       "A practical plan for travellers arriving in the morning and leaving the next day — covers the essential Varanasi experience in one well-paced day from the airport.",
-    image: "/images/package-local.webp",
+    image: "/images/vehicle-luggage-2.webp",
     tags: ["Short-stay", "Airport arrival"],
     customizable: true,
     guideAvailable: true,

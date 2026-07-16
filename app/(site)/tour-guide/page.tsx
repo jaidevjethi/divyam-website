@@ -39,8 +39,8 @@ export default function TourGuidePage() {
           { name: "Tour Guide", path: "/tour-guide" },
         ]}
         image={{
-          src: "/images/route-sarnath.webp",
-          alt: "Dhamek Stupa, Sarnath",
+          src: "/images/guide-ghats.webp",
+          alt: "Local guide explaining the ghats to two travellers, morning light",
         }}
         aside={
           <AnswerBlock

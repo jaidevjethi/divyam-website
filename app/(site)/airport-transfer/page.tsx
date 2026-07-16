@@ -76,8 +76,8 @@ export default function AirportTransferPage() {
         ]}
         ctaContext="airport"
         image={{
-          src: "/images/service-airport.webp",
-          alt: "Aircraft at the gate, Lal Bahadur Shastri Airport (Babatpur)",
+          src: "/images/route-airport-2.webp",
+          alt: "Lal Bahadur Shastri Airport terminal at Babatpur, Varanasi",
         }}
         aside={
           <AnswerBlock

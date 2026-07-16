@@ -11,6 +11,7 @@ import { VehicleSelector } from "@/components/sections/VehicleSelector";
 import { PopularRoutes } from "@/components/sections/PopularRoutes";
 import { EditorialBand } from "@/components/sections/EditorialBand";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { JourneyLine } from "@/components/art/JourneyLine";
 import {
   breadcrumbSchema,
   faqPageSchema,
@@ -129,6 +130,8 @@ export default function TaxiServicesPage() {
         src="/images/band-river.webp"
         alt="Boats at the riverbank, dawn"
       />
+
+      <JourneyLine className="w-full h-10 sm:h-14" />
 
       {/* Booking process */}
       <section className="section-tight">

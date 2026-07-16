@@ -12,8 +12,8 @@ const services = [
     tag: "Highest demand",
     body: "Babatpur to your hotel, the ghats, or the Kashi Vishwanath corridor. Driver waits with a name board, tracks your flight, helps with luggage at the terminal and at the lane.",
     href: "/airport-transfer",
-    image: "/images/service-airport.webp",
-    alt: "Aircraft at the gate, Lal Bahadur Shastri Airport",
+    image: "/images/route-airport-2.webp",
+    alt: "Lal Bahadur Shastri Airport terminal at Babatpur, Varanasi",
   },
   {
     n: "02",
@@ -74,7 +74,7 @@ export function ServiceOverview() {
 
                 {/* Mobile: show image inline */}
                 <div className="col-span-10 lg:hidden mb-6 relative">
-                  <span className="absolute -top-10 -left-4 text-[120px] font-bold text-terracotta-soft/70 leading-none z-0 pointer-events-none select-none">
+                  <span className="drift-numeral absolute -top-10 -left-4 text-[120px] font-bold text-terracotta-soft/70 leading-none z-0 pointer-events-none select-none">
                     {s.n}
                   </span>
                   <div className="img-wrap relative aspect-[16/9] w-full rounded-2xl shadow-sm overflow-hidden z-10">
@@ -89,7 +89,7 @@ export function ServiceOverview() {
                 </div>
 
                 <div className="col-span-10 lg:col-span-4 relative z-10">
-                  <span className="hidden lg:block absolute -top-12 -left-8 text-[140px] font-bold text-terracotta-soft/70 leading-none z-0 pointer-events-none select-none">
+                  <span className="drift-numeral hidden lg:block absolute -top-12 -left-8 text-[140px] font-bold text-terracotta-soft/70 leading-none z-0 pointer-events-none select-none">
                     {s.n}
                   </span>
                   <div className="relative z-10">

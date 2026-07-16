@@ -91,7 +91,7 @@ export const business = {
 
   // Hero photography
   heroImage: "/images/hero-dawn-ghat.webp",
-  heroImageAlt: "Boats moored beside the ghat steps at dawn, Varanasi",
+  heroImageAlt: "Dawn over the Ganga at Varanasi — golden mist, boats and temple spires",
   heroAsideImage: "/images/hero-aarti.webp",
   heroAsideImageAlt: "Priests holding torches at the evening Ganga aarti",
 } as const;

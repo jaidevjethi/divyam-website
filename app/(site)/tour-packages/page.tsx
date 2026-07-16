@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { ContactConversion } from "@/components/sections/ContactConversion";
 import { WhatsAppButton } from "@/components/primitives/WhatsAppButton";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { JourneyLine } from "@/components/art/JourneyLine";
 import { imagePresets } from "@/lib/image";
 import {
   breadcrumbSchema,
@@ -143,6 +144,8 @@ export default function TourPackagesPage() {
           </div>
         </Container>
       </section>
+
+      <JourneyLine className="w-full h-10 sm:h-14" />
 
       <section className="section-tight bg-cream-deep">
         <Container width="wide">

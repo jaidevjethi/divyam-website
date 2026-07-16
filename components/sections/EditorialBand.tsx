@@ -28,14 +28,16 @@ export function EditorialBand({ src, alt, caption, aspect = "wide" }: Props) {
   return (
     <ScrollReveal variant="fade-in" duration={0.8}>
       <figure className="relative w-full overflow-hidden">
-        <div className={`img-wrap relative w-full ${aspectClass}`}>
-          <Image
-            src={src}
-            alt={alt}
-            fill
-            sizes={imagePresets.band.sizes}
-            className="object-cover brightness-[85%]"
-          />
+        <div className={`img-wrap parallax-band relative w-full ${aspectClass}`}>
+          <div className="parallax-inner">
+            <Image
+              src={src}
+              alt={alt}
+              fill
+              sizes={imagePresets.band.sizes}
+              className="object-cover brightness-[85%]"
+            />
+          </div>
           {/* Subtle overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-t from-walnut/40 via-transparent to-transparent pointer-events-none" />
           

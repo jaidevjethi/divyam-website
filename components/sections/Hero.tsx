@@ -115,14 +115,16 @@ export function Hero() {
       </Container>
 
       {/* Full-bleed cinematic photo band */}
-      <div className="relative mt-16 sm:mt-20 aspect-[21/9] sm:aspect-[24/9] w-full">
-        <Image
-          src={business.heroImage}
-          alt={business.heroImageAlt}
-          fill
-          sizes="100vw"
-          className="object-cover"
-        />
+      <div className="parallax-band relative mt-16 sm:mt-20 aspect-[21/9] sm:aspect-[24/9] w-full">
+        <div className="parallax-inner">
+          <Image
+            src={business.heroImage}
+            alt={business.heroImageAlt}
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
+        </div>
         {/* Soft cream gradient at the bottom for editorial transition */}
         <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent to-cream pointer-events-none" />
       </div>

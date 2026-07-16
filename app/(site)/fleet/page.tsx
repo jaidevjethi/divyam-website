@@ -36,8 +36,8 @@ export default function FleetPage() {
         ]}
         ctaContext="fleet"
         image={{
-          src: "/images/vehicle-suv-2.webp",
-          alt: "Clean SUV vehicle exterior",
+          src: "/images/fleet-lineup.webp",
+          alt: "Sedan, SUV and tempo traveller parked in a row near the riverfront gateway",
         }}
       />
 

@@ -38,8 +38,8 @@ export default function AboutPage() {
           { name: "About", path: "/about" },
         ]}
         image={{
-          src: "/images/operator-detail.webp",
-          alt: "Quiet detail — brass and warm light",
+          src: "/images/operator-chai.webp",
+          alt: "Kulhad chai and marigolds on the dashboard, ghats at dawn through the windshield",
         }}
       />
 

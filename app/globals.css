@@ -370,6 +370,50 @@ h3 { font-weight: 600; }
   scroll-margin-top: 100px;
 }
 
+/* =========================================================
+   Scroll-driven flow — progressive enhancement only.
+   Static fallback everywhere; nothing moves for reduced-motion
+   users or browsers without scroll-driven animations.
+   ========================================================= */
+
+/* Base (fallback): inner layer simply fills its band. */
+.parallax-inner {
+  position: absolute;
+  inset: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    /* Full-bleed photo bands drift slower than the page. The inner
+       layer is 118% tall so ±4.5% travel never exposes edges. */
+    .parallax-band {
+      overflow: hidden;
+    }
+    .parallax-band > .parallax-inner {
+      height: 118%;
+      top: -9%;
+      bottom: auto;
+      animation: parallax-drift linear both;
+      animation-timeline: view();
+    }
+
+    /* Oversized ghost numerals drift for quiet depth. */
+    .drift-numeral {
+      animation: numeral-drift linear both;
+      animation-timeline: view();
+    }
+  }
+}
+
+@keyframes parallax-drift {
+  from { transform: translateY(-4.5%); }
+  to   { transform: translateY(4.5%); }
+}
+@keyframes numeral-drift {
+  from { transform: translateY(28px); }
+  to   { transform: translateY(-28px); }
+}
+
 /* Motion / Interaction Utilities */
 .transition-smooth {
   transition-property: all;

@@ -8,49 +8,62 @@ type Props = {
 };
 
 /**
- * Refined brand mark — a single hand-drawn curve that suggests
- * the bend of the Ganga and the line of a route. No clip-art car,
- * no temple silhouette, no circle frame.
+ * The Divyam mark — "dawn on the Ganga inside the D":
+ * a bold D monogram holding a brass rising sun and the river's wave.
+ * Strokes use currentColor so the mark adapts to light/dark surfaces;
+ * the sun stays brass everywhere.
  */
-export function Logo({ className, variant = "header" }: Props) {
-  const mark = (
+function Mark({ size = 26, className }: { size?: number; className?: string }) {
+  return (
     <svg
-      width="22"
-      height="22"
-      viewBox="0 0 22 22"
+      width={size}
+      height={size}
+      viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden
-      className="shrink-0"
+      className={cn("shrink-0", className)}
     >
       <path
-        d="M2 16 C 6 16, 6 6, 11 6 S 16 16, 20 16"
-        stroke="var(--color-terracotta)"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        fill="none"
+        d="M10 5 H14.5 C23.5 5 27.5 9.8 27.5 16 C27.5 22.2 23.5 27 14.5 27 H10 Z"
+        stroke="currentColor"
+        strokeWidth="2.6"
+        strokeLinejoin="round"
       />
-      <circle cx="11" cy="6" r="1.4" fill="var(--color-brass)" />
+      <path d="M10 5 V27" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" />
+      <path
+        d="M12.8 20.7 C14.8 18.8 16.5 21.9 18.6 20.2 C20 19.1 21.2 19.6 22 20.4"
+        stroke="currentColor"
+        strokeWidth="1.9"
+        strokeLinecap="round"
+      />
+      <circle cx="17.3" cy="12.6" r="2.7" fill="var(--color-brass)" />
     </svg>
   );
+}
 
+export function Logo({ className, variant = "header" }: Props) {
   if (variant === "mark") {
-    return <span className={cn("inline-flex", className)}>{mark}</span>;
+    return (
+      <span className={cn("inline-flex text-current", className)}>
+        <Mark />
+      </span>
+    );
   }
 
   if (variant === "footer") {
     return (
       <Link
         href="/"
-        className={cn("inline-flex items-baseline gap-3", className)}
+        className={cn("inline-flex items-center gap-3 text-cream", className)}
         aria-label={`${business.shortName} — home`}
       >
-        {mark}
+        <Mark size={34} />
         <span className="flex flex-col leading-tight">
-          <span className="font-serif text-[28px] tracking-[-0.015em] text-charcoal">
+          <span className="font-serif text-[28px] tracking-[-0.015em] text-cream whitespace-nowrap">
             Divyam Tours
           </span>
-          <span className="text-[10px] tracking-[0.2em] uppercase text-mist mt-1.5">
+          <span className="text-[10px] tracking-[0.2em] uppercase text-cream/60 mt-1.5">
             Varanasi · Sarnath · Prayagraj · Ayodhya
           </span>
         </span>
@@ -63,12 +76,12 @@ export function Logo({ className, variant = "header" }: Props) {
     <Link
       href="/"
       className={cn(
-        "inline-flex items-baseline gap-2.5 text-charcoal hover:text-terracotta transition-colors",
+        "inline-flex items-center gap-2.5 text-charcoal hover:text-terracotta transition-colors",
         className
       )}
       aria-label={`${business.shortName} — home`}
     >
-      {mark}
+      <Mark />
       <span className="font-serif text-[20px] tracking-[-0.015em] whitespace-nowrap">
         Divyam Tours
       </span>
