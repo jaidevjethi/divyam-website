@@ -42,7 +42,7 @@ export default function TourPackagesPage() {
         ]}
         ctaContext="package"
         image={{
-          src: "/images/service-packages.jpg",
+          src: "/images/service-packages.webp",
           alt: "Group of boats on the Ganga, late morning",
         }}
         aside={

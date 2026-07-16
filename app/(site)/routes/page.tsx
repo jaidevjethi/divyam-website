@@ -43,7 +43,7 @@ export default function RoutesHubPage() {
             <p className="text-ink-soft">Short trips within and around Varanasi city limits.</p>
           </div>
           
-          <ul className="border-t border-line-strong mb-16">
+          <div className="border-t border-line-strong mb-16">
             <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-10" staggerDelay={0.06}>
               {routes.filter(r => ["varanasi-airport-to-city-taxi", "varanasi-local-temple-tour", "varanasi-full-day-sightseeing", "varanasi-to-sarnath-taxi"].includes(r.slug)).map((route) => {
                 const destination = route.to.startsWith("Varanasi") ? route.from : route.to;
@@ -81,14 +81,14 @@ export default function RoutesHubPage() {
                 );
               })}
             </StaggerContainer>
-          </ul>
+          </div>
 
           <div className="mb-12 pt-8">
             <h3 className="font-serif text-2xl text-ink mb-2">Outstation & Pilgrimage Routes</h3>
             <p className="text-ink-soft">Long-distance highway travel requiring comfortable vehicles.</p>
           </div>
 
-          <ul className="border-t border-line-strong">
+          <div className="border-t border-line-strong">
             <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-10" staggerDelay={0.06}>
               {routes.filter(r => !["varanasi-airport-to-city-taxi", "varanasi-local-temple-tour", "varanasi-full-day-sightseeing", "varanasi-to-sarnath-taxi"].includes(r.slug)).map((route) => {
                 const destination = route.to.startsWith("Varanasi") ? route.from : route.to;
@@ -126,7 +126,7 @@ export default function RoutesHubPage() {
                 );
               })}
             </StaggerContainer>
-          </ul>
+          </div>
 
         </Container>
       </section>

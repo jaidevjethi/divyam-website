@@ -38,7 +38,7 @@ export default function AboutPage() {
           { name: "About", path: "/about" },
         ]}
         image={{
-          src: "/images/operator-detail.jpg",
+          src: "/images/operator-detail.webp",
           alt: "Quiet detail — brass and warm light",
         }}
       />
@@ -75,7 +75,7 @@ export default function AboutPage() {
       </section>
 
       <EditorialBand
-        src="/images/band-river.jpg"
+        src="/images/band-river.webp"
         alt="Boats moored on the Ganga in the early light"
       />
 

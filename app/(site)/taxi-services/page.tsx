@@ -82,7 +82,7 @@ export default function TaxiServicesPage() {
           { name: "Taxi Services", path: "/taxi-services" },
         ]}
         image={{
-          src: "/images/service-sightseeing.jpg",
+          src: "/images/service-sightseeing.webp",
           alt: "Boats moored near the ghats, mid-morning",
         }}
         aside={
@@ -126,7 +126,7 @@ export default function TaxiServicesPage() {
       </section>
 
       <EditorialBand
-        src="/images/band-river.jpg"
+        src="/images/band-river.webp"
         alt="Boats at the riverbank, dawn"
       />
 

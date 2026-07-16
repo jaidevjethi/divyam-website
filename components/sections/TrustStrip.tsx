@@ -4,7 +4,7 @@ type Item = { label: string; sub?: string };
 
 const DEFAULT_ITEMS: Item[] = [
   { label: "Local route knowledge", sub: "Varanasi, Sarnath, Prayagraj, Ayodhya" },
-  { label: "Tourist-friendly support", sub: "English on WhatsApp, calm coordination" },
+  { label: "Tourist-friendly support", sub: "Hindi & English on WhatsApp, calm coordination" },
   { label: "Multiple vehicle options", sub: "Sedan · SUV · Tempo traveller" },
   { label: "Direct call & WhatsApp", sub: "No forms, no account creation" },
 ];

@@ -46,7 +46,7 @@ export default function OutstationTaxiPage() {
         ]}
         ctaContext="outstation"
         image={{
-          src: "/images/service-outstation.jpg",
+          src: "/images/service-outstation.webp",
           alt: "Sunset boat ride silhouette on the Ganga",
         }}
         aside={

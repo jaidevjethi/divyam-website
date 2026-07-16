@@ -5,6 +5,9 @@
 
 export type FAQ = { q: string; a: string };
 
+/** Number of general FAQs shown on the homepage (teaser + FAQPage schema). */
+export const HOME_TEASER_COUNT = 5;
+
 type FAQGroups = {
   general: FAQ[];
   airport: FAQ[];
@@ -14,10 +17,28 @@ type FAQGroups = {
 };
 
 export const faqs: FAQGroups = {
+  // The first HOME_TEASER_COUNT entries render on the homepage (FAQTeaser +
+  // FAQPage schema) — keep the highest-intent questions at the top.
   general: [
     {
       q: "How do I book a taxi with Divyam Tours?",
       a: "Call or message us on WhatsApp with your pickup point, drop, and approximate time. We confirm the vehicle and driver back to you on the same channel — no forms, no account creation.",
+    },
+    {
+      q: "Is Uber or Ola available in Varanasi?",
+      a: "App cabs operate in Varanasi but coverage is patchy — drivers often cancel airport pickups, late-night availability is unreliable, and the old-city lanes confuse app navigation. Most travellers use a local operator: the fare is agreed before the trip, the driver knows the ghat-area drop points, and the same person stays with you for the whole day.",
+    },
+    {
+      q: "What is the best way to get around Varanasi?",
+      a: "The old city and ghats are best on foot — lanes are too narrow for cars. For everything else — airport transfer, Sarnath, BHU, Ramnagar, and outstation trips to Prayagraj or Ayodhya — a private car with a driver who knows the parking-and-walk points saves the most time.",
+    },
+    {
+      q: "Do your drivers speak English?",
+      a: "The coordinator speaks English and Hindi on WhatsApp and phone. Drivers speak Hindi and functional English — enough for timings, stops and directions. For detailed history and rituals, an English-speaking guide can be added.",
+    },
+    {
+      q: "Can I book from outside India before I arrive?",
+      a: "Yes — WhatsApp works internationally. Send your dates and flight details before you fly; the vehicle, driver and fare are confirmed in writing on the same thread, so your pickup is arranged before you land.",
     },
     {
       q: "Can I book a taxi for the same day?",

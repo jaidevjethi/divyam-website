@@ -48,7 +48,7 @@ export default function LocalSightseeingPage() {
         ]}
         ctaContext="sightseeing"
         image={{
-          src: "/images/package-local.jpg",
+          src: "/images/package-local.webp",
           alt: "Boats and ghat steps along the Ganga",
         }}
         aside={

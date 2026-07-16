@@ -72,7 +72,9 @@ export function localBusinessSchema() {
       "@type": "Person",
       name: business.founder,
       jobTitle: "Founder & trip coordinator",
+      knowsLanguage: ["en", "hi"],
     },
+    knowsLanguage: ["en", "hi"],
     // Opening hours are omitted until the operator confirms them.
     ...(business.hours.hoursConfirmed
       ? {

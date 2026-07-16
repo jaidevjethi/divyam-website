@@ -36,7 +36,7 @@ export default function FleetPage() {
         ]}
         ctaContext="fleet"
         image={{
-          src: "/images/vehicle-suv-2.jpg",
+          src: "/images/vehicle-suv-2.webp",
           alt: "Clean SUV vehicle exterior",
         }}
       />

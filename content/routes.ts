@@ -94,7 +94,7 @@ export const routes: RouteData[] = [
         a: "The fare depends on your drop point and vehicle. Message us on WhatsApp with your hotel or area — we confirm the exact fare before the trip, and the amount agreed is the amount you pay. Tolls and parking, where applicable, are listed upfront.",
       },
     ],
-    image: "/images/route-airport-2.jpg",
+    image: "/images/route-airport-2.webp",
     tags: ["International tourists", "Senior comfort", "Same-day"],
   },
   {
@@ -151,7 +151,7 @@ export const routes: RouteData[] = [
         a: "Two to three hours covers Dhamek Stupa, Mulagandha Kuti Vihara and the museum at a comfortable pace.",
       },
     ],
-    image: "/images/route-sarnath.jpg",
+    image: "/images/route-sarnath.webp",
     tags: ["Buddhist circuit", "Half-day", "Family-friendly"],
   },
   {
@@ -208,7 +208,7 @@ export const routes: RouteData[] = [
         a: "Yes — it's a regular highway route. An SUV/MUV is more comfortable for elderly passengers or groups of four.",
       },
     ],
-    image: "/images/route-prayagraj.jpg",
+    image: "/images/route-prayagraj.webp",
     tags: ["Sangam darshan", "Day-trip", "Senior comfort"],
   },
   {
@@ -265,7 +265,7 @@ export const routes: RouteData[] = [
         a: "Mostly highway with some stretches that are slower. An SUV/MUV with a familiar driver makes the drive much easier.",
       },
     ],
-    image: "/images/route-ayodhya.jpg",
+    image: "/images/route-ayodhya.webp",
     tags: ["Ram Mandir", "Overnight suggested", "Pilgrim families"],
   },
   {
@@ -323,7 +323,7 @@ export const routes: RouteData[] = [
         a: "Innova Crysta or a well-maintained SUV. Six hours on the highway is tiring in a sedan, especially with elderly travellers or children.",
       },
     ],
-    image: "/images/route-bodhgaya.jpg",
+    image: "/images/route-bodhgaya.webp",
     tags: ["Buddhist circuit", "Overnight suggested", "Highway route"],
   },
   {
@@ -380,7 +380,7 @@ export const routes: RouteData[] = [
         a: "We recommend daytime travel on this route. The highway is fine but rural stretches between Mirzapur and Vindhyachal are better driven in daylight.",
       },
     ],
-    image: "/images/route-vindhyachal.jpg",
+    image: "/images/route-vindhyachal.webp",
     tags: ["Shakti Peeth", "Same-day", "Navratri pilgrimage"],
   },
   {
@@ -438,7 +438,7 @@ export const routes: RouteData[] = [
         a: "Possible but very long. A better plan is temple darshan on one day and Sarnath on a separate morning.",
       },
     ],
-    image: "/images/route-temple-tour.jpg",
+    image: "/images/route-temple-tour.webp",
     tags: ["Temple darshan", "Full-day", "Elder-friendly"],
   },
   {
@@ -496,7 +496,7 @@ export const routes: RouteData[] = [
         a: "Absolutely. This is a private taxi — skip Ramnagar Fort, add more ghats, spend longer at Sarnath. Tell the driver your priorities and the plan adjusts.",
       },
     ],
-    image: "/images/route-sightseeing.jpg",
+    image: "/images/route-sightseeing.webp",
     tags: ["Full-day", "Tourist circuit", "International visitors"],
   },
 ];

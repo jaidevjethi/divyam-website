@@ -15,7 +15,7 @@ export function FromTheOperator() {
             <ScrollReveal>
               <div className="img-wrap relative aspect-square w-full max-w-[220px] overflow-hidden rounded-xl border border-line/40 shadow-sm">
                 <Image
-                  src="/images/operator-detail.jpg"
+                  src="/images/operator-detail.webp"
                   alt="Brass details, a small quiet moment"
                   fill
                   sizes={imagePresets.operator.sizes}

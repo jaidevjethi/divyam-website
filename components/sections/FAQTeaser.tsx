@@ -2,11 +2,11 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { FAQAccordion } from "./FAQAccordion";
-import { faqs } from "@/content/faqs";
+import { faqs, HOME_TEASER_COUNT } from "@/content/faqs";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export function FAQTeaser() {
-  const items = faqs.general.slice(0, 4);
+  const items = faqs.general.slice(0, HOME_TEASER_COUNT);
 
   return (
     <section className="section bg-cream">

@@ -12,21 +12,21 @@ import { cn } from "@/lib/utils";
 
 const story = [
   {
-    src: "/images/story-1-2.jpg",
+    src: "/images/story-1-2.webp",
     alt: "Dawn over the Varanasi ghats, boats on the misty Ganga",
     when: "Dawn",
     caption:
       "Before the city is awake, the first lamps appear at Assi Ghat. We start sunrise pickups at 5 am.",
   },
   {
-    src: "/images/story-2-2.jpg",
+    src: "/images/story-2-2.webp",
     alt: "Pilgrims in the lane approaching the Kashi Vishwanath temple gate",
     when: "Mid-day",
     caption:
       "The temple corridor at Kashi Vishwanath sees its calmest hour just before the afternoon offerings.",
   },
   {
-    src: "/images/story-3-2.jpg",
+    src: "/images/story-3-2.webp",
     alt: "Priests raising fire lamps at the evening Ganga aarti",
     when: "Evening",
     caption:

@@ -90,9 +90,9 @@ export const business = {
   currency: "INR",
 
   // Hero photography
-  heroImage: "/images/hero-dawn-ghat.jpg",
+  heroImage: "/images/hero-dawn-ghat.webp",
   heroImageAlt: "Boats moored beside the ghat steps at dawn, Varanasi",
-  heroAsideImage: "/images/hero-aarti.jpg",
+  heroAsideImage: "/images/hero-aarti.webp",
   heroAsideImageAlt: "Priests holding torches at the evening Ganga aarti",
 } as const;
 

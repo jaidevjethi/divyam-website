@@ -39,7 +39,7 @@ export function ContactConversion({
       {isDark && (
         <div className="absolute inset-0 opacity-[0.12] pointer-events-none">
           <Image
-            src="/images/story-1.jpg"
+            src="/images/story-1.webp"
             alt=""
             fill
             sizes="100vw"

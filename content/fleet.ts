@@ -38,7 +38,7 @@ export const fleet: Vehicle[] = [
     routeSuitability:
       "Comfortable for shorter trips and city use. For long routes (Ayodhya, Bodhgaya), pick SUV/MUV.",
     examples: ["Maruti Dzire", "Honda Amaze"],
-    image: "/images/vehicle-sedan-2.jpg",
+    image: "/images/vehicle-sedan-2.webp",
     tags: ["City use", "Couples"],
     passengers: 3,
     largeBags: 2,
@@ -60,7 +60,7 @@ export const fleet: Vehicle[] = [
     routeSuitability:
       "The most versatile option. Recommended for elderly travellers, long routes and groups of 4+ with luggage.",
     examples: ["Toyota Innova Crysta", "Mahindra Scorpio"],
-    image: "/images/vehicle-suv-2.jpg",
+    image: "/images/vehicle-suv-2.webp",
     tags: ["Family", "Senior comfort", "Outstation"],
     passengers: 5,
     largeBags: 4,
@@ -82,7 +82,7 @@ export const fleet: Vehicle[] = [
     routeSuitability:
       "Best for group routes — Varanasi + Sarnath + Prayagraj + Ayodhya in one comfortable vehicle.",
     examples: ["Force Tempo Traveller"],
-    image: "/images/vehicle-tempo-2.jpg",
+    image: "/images/vehicle-tempo-2.webp",
     tags: ["Groups", "Multi-day"],
     passengers: 12,
     largeBags: 8,
@@ -103,7 +103,7 @@ export const fleet: Vehicle[] = [
     routeSuitability:
       "Specifically configured for airport transfer comfort with extra luggage.",
     examples: ["Innova / SUV with extra boot space"],
-    image: "/images/vehicle-luggage-2.jpg",
+    image: "/images/vehicle-luggage-2.webp",
     tags: ["Airport arrival", "Extra luggage"],
     passengers: 4,
     largeBags: 4,

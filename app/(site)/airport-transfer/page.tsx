@@ -76,7 +76,7 @@ export default function AirportTransferPage() {
         ]}
         ctaContext="airport"
         image={{
-          src: "/images/service-airport.jpg",
+          src: "/images/service-airport.webp",
           alt: "Aircraft at the gate, Lal Bahadur Shastri Airport (Babatpur)",
         }}
         aside={

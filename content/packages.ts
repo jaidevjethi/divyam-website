@@ -38,7 +38,7 @@ export const packages: Package[] = [
     guideOption: "Optional local guide for temple-area orientation and history.",
     summary:
       "A paced one-day plan covering the city's most important temple and ghat sites, ending with the evening Ganga aarti. Driver familiar with parking-and-walk points so you don't waste time in lanes.",
-    image: "/images/package-local.jpg",
+    image: "/images/package-local.webp",
     tags: ["First-time visitors", "Day plan"],
     customizable: true,
     guideAvailable: true,
@@ -59,7 +59,7 @@ export const packages: Package[] = [
     guideOption: "Optional guide at Sarnath and Kashi Vishwanath area.",
     summary:
       "Sarnath in the morning while it's quiet, Varanasi in the afternoon and evening. We pace the order so you arrive at the aarti without rushing.",
-    image: "/images/package-sarnath-2.jpg",
+    image: "/images/package-sarnath-2.webp",
     tags: ["Buddhist circuit", "International tourists"],
     customizable: true,
     guideAvailable: true,
@@ -78,7 +78,7 @@ export const packages: Package[] = [
     guideOption: "Guide can be arranged per day or for the full circuit.",
     summary:
       "A comfortable three-day plan that covers darshan, the Buddhist circuit at Sarnath, and the Triveni Sangam at Prayagraj without backtracking.",
-    image: "/images/package-circuit-2.jpg",
+    image: "/images/package-circuit-2.webp",
     tags: ["Pilgrim families", "Multi-day"],
     customizable: true,
     guideAvailable: true,
@@ -99,7 +99,7 @@ export const packages: Package[] = [
     guideOption: "Optional guide for orientation in the temple area.",
     summary:
       "A practical plan for travellers arriving in the morning and leaving the next day — covers the essential Varanasi experience in one well-paced day from the airport.",
-    image: "/images/package-local.jpg",
+    image: "/images/package-local.webp",
     tags: ["Short-stay", "Airport arrival"],
     customizable: true,
     guideAvailable: true,

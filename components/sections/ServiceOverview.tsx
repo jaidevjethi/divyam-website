@@ -12,7 +12,7 @@ const services = [
     tag: "Highest demand",
     body: "Babatpur to your hotel, the ghats, or the Kashi Vishwanath corridor. Driver waits with a name board, tracks your flight, helps with luggage at the terminal and at the lane.",
     href: "/airport-transfer",
-    image: "/images/service-airport.jpg",
+    image: "/images/service-airport.webp",
     alt: "Aircraft at the gate, Lal Bahadur Shastri Airport",
   },
   {
@@ -20,7 +20,7 @@ const services = [
     name: "Local sightseeing",
     body: "Half-day and full-day plans across temples, ghats, BHU and Sankat Mochan, with optional Sarnath add-on. Driver coordinates the closest motorable drop-off for each stop.",
     href: "/local-sightseeing",
-    image: "/images/service-sightseeing.jpg",
+    image: "/images/service-sightseeing.webp",
     alt: "Boats moored near the ghats at midday",
   },
   {
@@ -28,7 +28,7 @@ const services = [
     name: "Outstation routes",
     body: "Prayagraj for the Sangam, Ayodhya for Ram Mandir, Bodhgaya for the Buddhist circuit, Vindhyachal for Devi darshan. One-way, round-trip and multi-day plans.",
     href: "/outstation-taxi",
-    image: "/images/service-outstation.jpg",
+    image: "/images/service-outstation.webp",
     alt: "Boat silhouette at sunset on the Ganges",
   },
   {
@@ -36,7 +36,7 @@ const services = [
     name: "Tour packages & guides",
     body: "Curated 1- to 5-day plans with optional local guides for temple-area orientation. Customisable to group size, pace and dates — not rigid catalogue packages.",
     href: "/tour-packages",
-    image: "/images/service-packages.jpg",
+    image: "/images/service-packages.webp",
     alt: "Group of boats on the Ganga, late morning",
   },
 ];

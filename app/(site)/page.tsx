@@ -14,11 +14,14 @@ import { FAQTeaser } from "@/components/sections/FAQTeaser";
 import { ContactConversion } from "@/components/sections/ContactConversion";
 import { InternationalTravelers } from "@/components/sections/InternationalTravelers";
 import { JourneyLine } from "@/components/art/JourneyLine";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { faqPageSchema } from "@/lib/schema";
+import { faqs, HOME_TEASER_COUNT } from "@/content/faqs";
 
 export const metadata: Metadata = buildMetadata({
   title: "Private Taxi & Tour Service in Varanasi",
   description:
-    "Trusted local taxi service in Varanasi for airport pickup, temple visits, sightseeing and outstation spiritual routes. Book direct by call or WhatsApp.",
+    "Local taxi & cab service in Varanasi — airport pickup, temple darshan, sightseeing, outstation routes. Hindi & English support. Book direct on WhatsApp.",
   path: "/",
 });
 
@@ -32,7 +35,7 @@ export default function HomePage() {
       <PopularRoutes />
       <VehicleSelector />
       <EditorialBand
-        src="/images/band-river.jpg"
+        src="/images/band-river.webp"
         alt="Rowing boats moored at the riverbank, early morning"
         caption="A familiar driver knows which ghat stays calm at sunrise."
       />
@@ -48,6 +51,9 @@ export default function HomePage() {
         body="Phone or WhatsApp reaches the same coordinator. Most replies happen within minutes — not an auto-reply, not a chatbot."
         tone="dark"
       />
+
+      {/* Schema mirrors exactly the questions the FAQ teaser renders on-page */}
+      <JsonLd data={faqPageSchema(faqs.general.slice(0, HOME_TEASER_COUNT))} />
     </>
   );
 }

@@ -12,7 +12,7 @@ const reasons = [
   },
   {
     label: "Communication",
-    body: "One coordinator from your first message through the end of your trip. English on WhatsApp throughout — for time changes, route tweaks and last-minute add-ons.",
+    body: "One coordinator from your first message through the end of your trip. Hindi and English on WhatsApp throughout — for time changes, route tweaks and last-minute add-ons.",
   },
   {
     label: "Pace",
