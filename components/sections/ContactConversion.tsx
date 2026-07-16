@@ -55,7 +55,7 @@ export function ContactConversion({
             <ScrollReveal>
               <p
                 className={`text-[11px] tracking-[0.22em] uppercase font-medium ${
-                  isDark ? "text-cream/55" : "text-mist"
+                  isDark ? "text-cream/70" : "text-mist"
                 }`}
               >
                 Direct booking
@@ -114,7 +114,7 @@ export function ContactConversion({
                     href={whatsappHref(context)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-3 bg-whatsapp hover:bg-whatsapp-deep text-white font-semibold text-[15px] py-4 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg hover:shadow-whatsapp/20 hover:-translate-y-0.5 w-full text-center"
+                    className="flex items-center justify-center gap-3 bg-whatsapp hover:bg-whatsapp-deep text-walnut-deep font-semibold text-[15px] py-4 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg hover:shadow-whatsapp/20 hover:-translate-y-0.5 w-full text-center"
                   >
                     <MessageCircle className="size-5 shrink-0" aria-hidden strokeWidth={2} />
                     WhatsApp: {whatsappDisplay()}

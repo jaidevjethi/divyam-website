@@ -476,7 +476,7 @@ export function PlanYourTripWizard() {
             type="button"
             onClick={submit}
             disabled={!canAdvance()}
-            className="inline-flex items-center gap-2 h-12 px-6 rounded-md font-medium text-[15px] bg-whatsapp text-white hover:bg-whatsapp-deep transition-colors duration-200 disabled:opacity-50 disabled:pointer-events-none cursor-pointer shadow-sm"
+            className="inline-flex items-center gap-2 h-12 px-6 rounded-md font-medium text-[15px] bg-whatsapp text-walnut-deep hover:bg-whatsapp-deep transition-colors duration-200 disabled:opacity-50 disabled:pointer-events-none cursor-pointer shadow-sm"
           >
             <MessageCircle className="size-4" strokeWidth={2} />
             Send via WhatsApp

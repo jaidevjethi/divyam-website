@@ -33,7 +33,7 @@ export function Footer() {
           {/* Contact & Trust strip */}
           <div className="lg:col-span-4 space-y-6">
             <div>
-              <p className="text-[10px] tracking-[0.22em] uppercase text-cream/55 mb-4">
+              <p className="text-[10px] tracking-[0.22em] uppercase text-cream/70 mb-4">
                 Direct booking
               </p>
               <ul className="flex flex-col gap-3.5 text-[15px]">
@@ -42,7 +42,7 @@ export function Footer() {
                     href={telHref()}
                     className="group inline-flex items-baseline gap-3"
                   >
-                    <span className="text-[10px] tracking-[0.18em] uppercase text-cream/45">
+                    <span className="text-[10px] tracking-[0.18em] uppercase text-cream/65">
                       Phone
                     </span>
                     <span className="text-cream border-b border-cream/50 pb-0.5 group-hover:text-marigold group-hover:border-marigold transition-colors">
@@ -57,7 +57,7 @@ export function Footer() {
                     rel="noopener noreferrer"
                     className="group inline-flex items-baseline gap-3"
                   >
-                    <span className="text-[10px] tracking-[0.18em] uppercase text-cream/45">
+                    <span className="text-[10px] tracking-[0.18em] uppercase text-cream/65">
                       WhatsApp
                     </span>
                     <span className="text-cream border-b border-cream/50 pb-0.5 group-hover:text-marigold group-hover:border-marigold transition-colors">
@@ -71,7 +71,7 @@ export function Footer() {
                       href={`mailto:${business.email}`}
                       className="group inline-flex items-baseline gap-3"
                     >
-                      <span className="text-[10px] tracking-[0.18em] uppercase text-cream/45">
+                      <span className="text-[10px] tracking-[0.18em] uppercase text-cream/65">
                         Email
                       </span>
                       <span className="text-cream border-b border-cream/50 pb-0.5 group-hover:text-marigold group-hover:border-marigold transition-colors">
@@ -128,7 +128,7 @@ export function Footer() {
           <div className="lg:col-span-8 grid grid-cols-2 sm:grid-cols-3 gap-8">
             {footerSections.map((section) => (
               <div key={section.heading}>
-                <p className="text-[10px] tracking-[0.22em] uppercase text-cream/55 mb-5">
+                <p className="text-[10px] tracking-[0.22em] uppercase text-cream/70 mb-5">
                   {section.heading}
                 </p>
                 <ul className="flex flex-col gap-3">
@@ -151,7 +151,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-6 border-t border-cream/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <Logo variant="mark" className="opacity-70" />
-          <div className="flex items-center gap-5 text-[12px] text-cream/45 tracking-wide">
+          <div className="flex items-center gap-5 text-[12px] text-cream/65 tracking-wide">
             <Link href="/credits" className="hover:text-cream/75 transition-colors">
               Photo credits
             </Link>

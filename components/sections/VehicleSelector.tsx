@@ -95,7 +95,7 @@ export function VehicleSelector() {
                     href={whatsappHref("fleet")}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex w-full lg:w-auto items-center justify-center gap-2 bg-whatsapp hover:bg-whatsapp-deep text-white font-medium text-[13.5px] px-5 py-3 rounded-lg transition-all duration-200 shadow-sm hover:shadow hover:shadow-whatsapp/20"
+                    className="inline-flex w-full lg:w-auto items-center justify-center gap-2 bg-whatsapp hover:bg-whatsapp-deep text-walnut-deep font-medium text-[13.5px] px-5 py-3 rounded-lg transition-all duration-200 shadow-sm hover:shadow hover:shadow-whatsapp/20"
                   >
                     <MessageCircle className="size-4" aria-hidden strokeWidth={2} />
                     Check availability

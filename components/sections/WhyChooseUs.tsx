@@ -47,7 +47,7 @@ export function WhyChooseUs() {
         <StaggerContainer className="border-t border-line-strong" staggerDelay={0.06}>
           {reasons.map((r) => (
             <StaggerItem key={r.label}>
-              <li
+              <div
                 className="grid grid-cols-12 gap-y-2 lg:gap-y-0 gap-x-6 lg:gap-x-12 py-8 lg:py-10 border-b border-line hover:bg-cream/20 transition-colors"
               >
                 <div className="col-span-12 lg:col-span-3">
@@ -56,7 +56,7 @@ export function WhyChooseUs() {
                 <p className="col-span-12 lg:col-span-8 lg:col-start-5 text-[16px] text-ink-soft leading-[1.7] max-w-[64ch]">
                   {r.body}
                 </p>
-              </li>
+              </div>
             </StaggerItem>
           ))}
         </StaggerContainer>

@@ -42,7 +42,7 @@ export function VisualStory() {
       <Container width="wide">
         <ScrollReveal>
           <div className="mb-14 lg:mb-2 max-w-3xl">
-            <p className="text-[11px] tracking-[0.22em] uppercase text-cream/55 font-medium">
+            <p className="text-[11px] tracking-[0.22em] uppercase text-cream/70 font-medium">
               A day on the Ganga
             </p>
             <h2 className="mt-5 text-display-md text-cream">

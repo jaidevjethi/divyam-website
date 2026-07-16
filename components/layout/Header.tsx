@@ -83,7 +83,7 @@ export function Header() {
               href={whatsappHref("general")}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 bg-whatsapp hover:bg-whatsapp-deep text-white text-[12.5px] font-semibold px-3.5 py-1.5 rounded-md transition-[background-color,transform] duration-200 active:scale-[0.97]"
+              className="inline-flex items-center gap-1.5 bg-whatsapp hover:bg-whatsapp-deep text-walnut-deep text-[12.5px] font-semibold px-3.5 py-1.5 rounded-md transition-[background-color,transform] duration-200 active:scale-[0.97]"
             >
               <MessageCircle className="size-3.5" aria-hidden strokeWidth={2} />
               Chat
@@ -175,7 +175,7 @@ export function Header() {
             href={whatsappHref("general")}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-3 bg-whatsapp hover:bg-whatsapp-deep text-white font-medium text-[14.5px] py-3.5 rounded-lg transition-[background-color,transform] duration-200 active:scale-[0.98] shadow-sm"
+            className="flex items-center justify-center gap-3 bg-whatsapp hover:bg-whatsapp-deep text-walnut-deep font-medium text-[14.5px] py-3.5 rounded-lg transition-[background-color,transform] duration-200 active:scale-[0.98] shadow-sm"
           >
             <MessageCircle className="size-4" aria-hidden strokeWidth={2} />
             WhatsApp {whatsappDisplay()}
