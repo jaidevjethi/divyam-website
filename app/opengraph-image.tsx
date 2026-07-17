@@ -32,20 +32,23 @@ export default async function Image() {
           fill="none"
           style={{ marginBottom: 28 }}
         >
+          <path d="M16 4.4 V7.6" stroke="#221c15" strokeWidth="2.2" strokeLinecap="round" />
+          <path d="M7.6 8.4 L9.9 10.7" stroke="#221c15" strokeWidth="2.2" strokeLinecap="round" />
+          <path d="M24.4 8.4 L22.1 10.7" stroke="#221c15" strokeWidth="2.2" strokeLinecap="round" />
+          <path d="M9.7 18 A 6.3 6.3 0 0 1 22.3 18 Z" fill="#c9952c" />
+          <path d="M4.5 18 H27.5" stroke="#221c15" strokeWidth="2.4" strokeLinecap="round" />
           <path
-            d="M10 5 H14.5 C23.5 5 27.5 9.8 27.5 16 C27.5 22.2 23.5 27 14.5 27 H10 Z"
+            d="M6.5 23.4 C 9.8 21.6 13.2 25.2 16.5 23.4 C 19.4 21.8 22.8 24.9 25.5 23.2"
             stroke="#221c15"
-            strokeWidth="2.6"
-            strokeLinejoin="round"
-          />
-          <path d="M10 5 V27" stroke="#221c15" strokeWidth="2.6" strokeLinecap="round" />
-          <path
-            d="M12.8 20.7 C14.8 18.8 16.5 21.9 18.6 20.2 C20 19.1 21.2 19.6 22 20.4"
-            stroke="#221c15"
-            strokeWidth="1.9"
+            strokeWidth="2.3"
             strokeLinecap="round"
           />
-          <circle cx="17.3" cy="12.6" r="2.7" fill="#c9952c" />
+          <path
+            d="M10 27.8 C 12.5 26.3 15 28.9 17.5 27.5 C 19.4 26.4 21 27.6 22 28"
+            stroke="#221c15"
+            strokeWidth="2"
+            strokeLinecap="round"
+          />
         </svg>
         <div
           style={{
