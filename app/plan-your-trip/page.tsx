@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Plan Your Trip — Custom Varanasi Travel Quote",
+  title: "Plan Your Trip | Custom Varanasi Travel Quote",
   description:
     "Tell us about your trip and get a custom WhatsApp quote from Divyam Tours. Airport pickups, sightseeing, outstation routes.",
   path: "/plan-your-trip",

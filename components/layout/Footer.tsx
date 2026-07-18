@@ -23,7 +23,7 @@ export function Footer() {
           <div className="lg:col-span-4 lg:col-start-9 self-end">
             <p className="font-serif italic text-[16px] text-cream/70 leading-[1.5]">
               From Babatpur arrival to the Sarnath morning and the Kashi
-              Vishwanath corridor — one number for the whole trip.
+              Vishwanath corridor, one number for the whole trip.
             </p>
           </div>
         </div>

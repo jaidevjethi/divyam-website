@@ -4,7 +4,7 @@ import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/ui/Scr
 const reasons = [
   {
     label: "On arrival",
-    body: "A driver waits at the terminal exit with your name on a board, tracks your flight on WhatsApp, and helps with luggage. Late-night and early-morning flights are routine — please confirm timing when booking.",
+    body: "A driver waits at the terminal exit with your name on a board, tracks your flight on WhatsApp, and helps with luggage. Late-night and early-morning flights are routine. Please confirm timing when booking.",
   },
   {
     label: "The route",
@@ -12,7 +12,7 @@ const reasons = [
   },
   {
     label: "Communication",
-    body: "One coordinator from your first message through the end of your trip. Hindi and English on WhatsApp throughout — for time changes, route tweaks and last-minute add-ons.",
+    body: "One coordinator from your first message through the end of your trip. Hindi and English on WhatsApp throughout, for time changes, route tweaks and last-minute add-ons.",
   },
   {
     label: "Pace",
@@ -20,7 +20,7 @@ const reasons = [
   },
   {
     label: "Group fit",
-    body: "We adjust pace, drop points and stop order for the realistic group on the trip — elderly travellers, families with children, first-time foreign visitors. The vehicle is matched to that, not the other way around.",
+    body: "We adjust pace, drop points and stop order for the realistic group on the trip: elderly travellers, families with children, first-time foreign visitors. The vehicle is matched to that, not the other way around.",
   },
   {
     label: "Payment",

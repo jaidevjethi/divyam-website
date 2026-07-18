@@ -8,18 +8,18 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, serviceSchema } from "@/lib/schema";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Tour Guide Service in Varanasi — Local Orientation & Guide+Cab",
+  title: "Tour Guide Service in Varanasi | Local Orientation & Guide+Cab",
   description:
-    "Local tour guide assistance in Varanasi — temple-area orientation, ghat walks, cultural context. Optional alongside your private taxi or package.",
+    "Local tour guide assistance in Varanasi: temple-area orientation, ghat walks, cultural context. Optional alongside your private taxi or package.",
   path: "/tour-guide",
 });
 
 const focuses = [
   { title: "Temple-area orientation", body: "Help understanding the temple corridor layout, what to do before darshan, where to leave shoes and bags. Practical, not theatrical." },
-  { title: "Ghat walks with context", body: "From Assi Ghat to Manikarnika — the story of the ghats, where to sit during evening aarti, where the sunrise photo points are." },
-  { title: "Sarnath cultural support", body: "Brief explanation of Dhamek Stupa, Mulagandha Kuti Vihara and the museum's key exhibits — saves time, deepens the visit." },
+  { title: "Ghat walks with context", body: "From Assi Ghat to Manikarnika: the story of the ghats, where to sit during evening aarti, where the sunrise photo points are." },
+  { title: "Sarnath cultural support", body: "Brief explanation of Dhamek Stupa, Mulagandha Kuti Vihara and the museum's key exhibits. It saves time and deepens the visit." },
   { title: "Language comfort", body: "Guides who speak English clearly for international tourists. Comfort levels in other languages confirmed per booking." },
-  { title: "Guide + cab combination", body: "A guide for the day alongside your private taxi — most efficient for first-time visitors who want context but not a tour group." },
+  { title: "Guide + cab combination", body: "A guide for the day alongside your private taxi. Most efficient for first-time visitors who want context but not a tour group." },
 ];
 
 export default function TourGuidePage() {
@@ -29,11 +29,11 @@ export default function TourGuidePage() {
         eyebrow="Local guide assistance"
         title={
           <>
-            A local guide who explains{" "}
-            <em className="editorial">what you&rsquo;re actually looking at.</em>
+            A Varanasi tour guide who explains{" "}
+            <em className="editorial">what you&rsquo;re looking at.</em>
           </>
         }
-        lede="Tour guide service alongside your taxi — for temple-area orientation, ghat walks, and Sarnath context. Truthful about what the guide can do; no inflated certification claims."
+        lede="Tour guide service alongside your taxi for temple-area orientation, ghat walks, and Sarnath context. Truthful about what the guide can do; no inflated certification claims."
         crumbs={[
           { name: "Home", path: "/" },
           { name: "Tour Guide", path: "/tour-guide" },
@@ -44,12 +44,12 @@ export default function TourGuidePage() {
         }}
         aside={
           <AnswerBlock
-            answer="Local guide assistance booked alongside your private taxi — orientation, context, and language comfort."
+            answer="Local guide assistance booked alongside your private taxi: orientation, context, and language comfort."
             items={[
               { label: "Best with", value: "Local sightseeing day" },
               { label: "Language", value: "English (per guide)" },
               { label: "Booking", value: "Add to taxi or package" },
-              { label: "Pace", value: "You set it — guide adapts" },
+              { label: "Pace", value: "You set it; guide adapts" },
             ]}
           />
         }
@@ -80,8 +80,8 @@ export default function TourGuidePage() {
             <p className="drop-cap">
               We do not invent certifications. We don&rsquo;t advertise a
               dozen languages we can&rsquo;t actually deliver. We confirm
-              the specific guide&rsquo;s strengths — what they know best,
-              and how clearly they speak English — before your trip.
+              the specific guide&rsquo;s strengths, what they know best,
+              and how clearly they speak English, before your trip.
             </p>
             <p>
               If we don&rsquo;t have the right guide for what you need, we
@@ -94,13 +94,13 @@ export default function TourGuidePage() {
 
       <ContactConversion
         heading="Want a guide for your Varanasi day?"
-        body="Tell us your interests — temples, ghats, Sarnath, photography — and the dates. We confirm guide availability on WhatsApp."
+        body="Tell us your interests (temples, ghats, Sarnath, photography) and the dates. We confirm guide availability on WhatsApp."
       />
 
       <JsonLd
         data={serviceSchema({
           name: "Tour guide service in Varanasi",
-          description: "Local tour guide assistance for Varanasi temples, ghats and Sarnath — bookable alongside private taxi.",
+          description: "Local tour guide assistance for Varanasi temples, ghats and Sarnath, bookable alongside private taxi.",
           serviceType: "Tour guide",
           url: "/tour-guide",
         })}

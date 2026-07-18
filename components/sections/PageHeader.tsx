@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
-import { MessageCircle, Phone, Sparkles } from "lucide-react";
+import { MessageCircle, Phone, Sparkles, CheckCircle2 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Breadcrumbs, type Crumb } from "@/components/route/Breadcrumbs";
 import {
@@ -103,6 +103,21 @@ export function PageHeader({
               <div className="mt-4 flex items-center gap-1.5 text-[12.5px] text-mist italic">
                 <Sparkles className="size-3.5 text-marigold" aria-hidden />
                 <span>Rated 4.9★ on Google · One coordinator, whole trip</span>
+              </div>
+
+              {/* Micro-trust chips fill the column and reinforce the promise */}
+              <div className="mt-8 flex flex-wrap items-center gap-3 text-[13px] text-ink-soft">
+                {["Reply within minutes", "No app download needed", "Same person, whole trip"].map(
+                  (chip) => (
+                    <span
+                      key={chip}
+                      className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-terracotta-soft/60 border border-terracotta-soft"
+                    >
+                      <CheckCircle2 className="size-4 text-terracotta" aria-hidden strokeWidth={2.5} />
+                      {chip}
+                    </span>
+                  )
+                )}
               </div>
             </ScrollReveal>
           </div>

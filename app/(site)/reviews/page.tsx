@@ -10,7 +10,7 @@ import { testimonials } from "@/content/testimonials";
 import { business, isPlaceholder } from "@/content/business";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Reviews — Divyam Tours Varanasi",
+  title: "Reviews | Divyam Tours Varanasi",
   description:
     "What travellers say about Divyam Tours Varanasi. Real testimonials from airport pickups, sightseeing days and outstation routes.",
   path: "/reviews",
@@ -30,7 +30,7 @@ export default function ReviewsPage() {
             <em className="editorial">about their trips.</em>
           </>
         }
-        lede={`Quoted word-for-word from our Google Business Profile — rated ${business.googleRating.value}★ across ${business.googleRating.count} reviews.`}
+        lede={`Quoted word-for-word from our Google Business Profile, rated ${business.googleRating.value}★ across ${business.googleRating.count} reviews.`}
         crumbs={[
           { name: "Home", path: "/" },
           { name: "Reviews", path: "/reviews" },
@@ -45,7 +45,7 @@ export default function ReviewsPage() {
                 We collect reviews directly on Google Business Profile, where
                 they stay verifiable and visible across search. Real
                 testimonials from recent trips will appear here as the
-                operator publishes them — we don&rsquo;t fabricate quotes
+                operator publishes them. We don&rsquo;t fabricate quotes
                 to fill a page.
               </p>
               {hasGoogleProfile && (
@@ -67,7 +67,7 @@ export default function ReviewsPage() {
               <ul className="grid gap-12 sm:grid-cols-2 border-t border-line-strong pt-10">
                 {testimonials.map((t, i) => (
                   <li key={i}>
-                    <p className="font-serif italic text-[19px] text-ink leading-[1.45]">
+                    <p className="font-serif text-[19px] text-ink leading-[1.5]">
                       &ldquo;{t.quote}&rdquo;
                     </p>
                     <p className="mt-6 label-caps">

@@ -46,7 +46,7 @@ function composeWhatsAppMessage(data: WizardData): string {
   const dest = data.destinations.length > 0 ? data.destinations.join(", ") : "Not specified";
 
   return [
-    `Hi Divyam Tours — I'd like to plan a trip.`,
+    `Hi Divyam Tours, I'd like to plan a trip.`,
     ``,
     `*Name:* ${data.name}`,
     `*WhatsApp:* ${data.whatsapp}`,
@@ -179,7 +179,7 @@ function Step1({ data, setData }: { data: WizardData; setData: (d: WizardData) =
           onClick={() => setData({ ...data, tripType: "car" })}
           icon={<Car className="size-7" strokeWidth={1.5} />}
           title="Just a car"
-          description="I know where I'm going — I just need a ride."
+          description="I know where I'm going. I just need a ride."
         />
         <SelectionCard
           selected={data.tripType === "planning"}
@@ -355,7 +355,7 @@ function SuccessScreen() {
       <div>
         <h2 className="font-serif text-display-sm text-ink">One tap left.</h2>
         <p className="text-ink-soft mt-3 max-w-md">
-          WhatsApp is opening with your trip summary pre-filled — press{" "}
+          WhatsApp is opening with your trip summary pre-filled. Press{" "}
           <strong>Send</strong> there and it reaches us directly. We usually
           reply within minutes.
         </p>

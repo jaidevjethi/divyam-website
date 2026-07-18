@@ -21,7 +21,7 @@ import { faqs, HOME_TEASER_COUNT } from "@/content/faqs";
 export const metadata: Metadata = buildMetadata({
   title: "Private Taxi & Tour Service in Varanasi",
   description:
-    "Local taxi & cab service in Varanasi — airport pickup, temple darshan, sightseeing, outstation routes. Hindi & English support. Book direct on WhatsApp.",
+    "Local taxi & cab service in Varanasi: airport pickup, temple darshan, sightseeing, outstation routes. Hindi & English support. Book direct on WhatsApp.",
   path: "/",
 });
 
@@ -54,7 +54,7 @@ export default function HomePage() {
       <ContactConversion
         heading="Plan your Varanasi trip with a local you can call."
         accent="a local you can call"
-        body="Phone or WhatsApp reaches the same coordinator. Most replies happen within minutes — not an auto-reply, not a chatbot."
+        body="Phone or WhatsApp reaches the same coordinator. Most replies happen within minutes, from a person and not a chatbot."
         tone="dark"
       />
 

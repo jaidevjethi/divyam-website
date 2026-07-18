@@ -19,9 +19,9 @@ import { packages } from "@/content/packages";
 import { faqs } from "@/content/faqs";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Varanasi Tour Packages — Spiritual Circuits & Sightseeing",
+  title: "Varanasi Tour Packages | Spiritual Circuits & Sightseeing",
   description:
-    "Customisable Varanasi tour packages — local one-day, Sarnath combo, spiritual circuits, international-tourist plans. With private vehicle and optional guide.",
+    "Customisable Varanasi tour packages: local one-day, Sarnath combo, spiritual circuits, international-tourist plans. With private vehicle and optional guide.",
   path: "/tour-packages",
 });
 
@@ -32,11 +32,11 @@ export default function TourPackagesPage() {
         eyebrow="Curated plans · customisable"
         title={
           <>
-            Tour packages — common plans,{" "}
+            Varanasi tour packages,{" "}
             <em className="editorial">tuned to your group.</em>
           </>
         }
-        lede="Use the packages below as a starting point. We adjust the order, pace, vehicle and guide to fit your actual group — pilgrim party, family with seniors, international tourists, or short-stay first-time visitors."
+        lede="Use the packages below as a starting point. We adjust the order, pace, vehicle and guide to fit your actual group: pilgrim party, family with seniors, international tourists, or short-stay first-time visitors."
         crumbs={[
           { name: "Home", path: "/" },
           { name: "Tour Packages", path: "/tour-packages" },
@@ -48,7 +48,7 @@ export default function TourPackagesPage() {
         }}
         aside={
           <AnswerBlock
-            answer="Packages are starting points — every plan is customised to your group, dates and pace."
+            answer="Packages are starting points; every plan is customised to your group, dates and pace."
             items={[
               { label: "Range", value: "1–5 day plans" },
               { label: "Includes", value: "Vehicle + driver, planning" },
@@ -85,21 +85,13 @@ export default function TourPackagesPage() {
                     No. {String(i + 1).padStart(2, "0")} · {pkg.idealFor}
                   </p>
                   <h2 className="font-serif text-[clamp(1.7rem,2.6vw,2.5rem)] font-bold text-ink leading-[1.05] tracking-[-0.015em]">
-                    {pkg.name.split("—")[0].trim()}
-                    {pkg.name.includes("—") && (
-                      <>
-                        <span className="mx-2 text-mist">—</span>
-                        <em className="editorial text-terracotta text-[0.85em]">
-                          {pkg.name.split("—")[1].trim()}
-                        </em>
-                      </>
-                    )}
+                    {pkg.name}
                   </h2>
                   <p className="mt-4 font-sans text-[12px] tracking-[0.16em] uppercase text-mist font-bold">
                     {pkg.duration}
                   </p>
                   <p className="mt-2 text-[13px] text-mist italic">
-                    Custom quote on WhatsApp — priced to your group and dates
+                    Custom quote on WhatsApp, priced to your group and dates
                   </p>
                   {pkg.tags && pkg.tags.length > 0 && (
                     <ul className="mt-4 flex flex-wrap gap-1.5">

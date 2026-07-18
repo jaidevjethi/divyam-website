@@ -12,9 +12,9 @@ import { isPlaceholder } from "@/content/business";
 import { CapacityDiagram } from "@/components/fleet/CapacityDiagram";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Vehicles — Sedan, SUV, Tempo Traveller in Varanasi",
+  title: "Vehicles | Sedan, SUV, Tempo Traveller in Varanasi",
   description:
-    "Vehicle options for Varanasi tourism — sedan, SUV/MUV, tempo traveller and luggage-friendly airport vehicles. Pick by traveller count and luggage.",
+    "Vehicle options for Varanasi tourism: sedan, SUV/MUV, tempo traveller and luggage-friendly airport vehicles. Pick by traveller count and luggage.",
   path: "/fleet",
 });
 
@@ -26,7 +26,7 @@ export default function FleetPage() {
         title={
           <>
             Pick a vehicle by{" "}
-            <em className="editorial">group size and luggage</em> — not model jargon.
+            <em className="editorial">group size and luggage</em>, not model jargon.
           </>
         }
         lede="Our fleet covers every common Varanasi tourist scenario. The category descriptions below tell you what each vehicle suits; actual models in service can be confirmed on WhatsApp."

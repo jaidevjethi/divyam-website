@@ -43,7 +43,7 @@ export function FromTheOperator() {
 
             <ScrollReveal delay={0.2}>
               <p className="mt-7 text-[17px] text-ink-soft leading-[1.7]">
-                When you call, you reach Mukesh — the same person who plans
+                When you call, you reach Mukesh, the same person who plans
                 your trip, confirms your vehicle, and answers on the WhatsApp
                 thread you wrote on. He&rsquo;ll tell you when an earlier start
                 makes for a calmer day, when Sarnath fits a half-day, and when
@@ -57,7 +57,7 @@ export function FromTheOperator() {
                 <p className="label-caps mb-6 text-terracotta font-bold">A short list of what we don&rsquo;t do</p>
                 <ul className="space-y-4 text-[16px] text-ink-soft leading-[1.6]">
                   {[
-                    "We don't run a 24/7 chatbot or a marketplace. One coordinator answers — that's the design.",
+                    "We don't run a 24/7 chatbot or a marketplace. One coordinator answers. That's the design.",
                     "We don't make certification claims for guides we don't have. If you need a specific guide, we'll say if we can deliver.",
                     "We don't write fake reviews to fill the page. Every quote on this site is word-for-word from our Google profile.",
                     "We don't quote prices we'll change at the vehicle. The fare we share on WhatsApp is the fare you pay.",

@@ -7,7 +7,7 @@ import { PageHeader } from "@/components/sections/PageHeader";
 import { photoCredits } from "@/content/credits";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Photo Credits — Divyam Tours",
+  title: "Photo Credits | Divyam Tours",
   description: "Photographer credits for imagery used on the Divyam Tours website.",
   path: "/credits",
   noindex: true,

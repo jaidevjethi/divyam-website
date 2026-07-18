@@ -47,7 +47,7 @@ export function VisualStory() {
             </p>
             <h2 className="mt-5 text-display-md text-cream">
               Three moments tourists{" "}
-              <em className="editorial text-marigold">often miss</em> — and
+              <em className="editorial text-marigold">often miss</em>, and
               how we time the day around them.
             </h2>
           </div>

@@ -12,9 +12,11 @@ type Props = {
   answer?: string;
   items: Item[];
   className?: string;
+  /** 2 for narrow rails (default), 4 for full-width fact strips */
+  columns?: 2 | 4;
 };
 
-export function AnswerBlock({ answer, items, className }: Props) {
+export function AnswerBlock({ answer, items, className, columns = 2 }: Props) {
   return (
     <div className={cn("", className)}>
       {answer && (
@@ -22,7 +24,13 @@ export function AnswerBlock({ answer, items, className }: Props) {
           {answer}
         </p>
       )}
-      <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-5">
+      <dl
+        className={
+          columns === 4
+            ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-5"
+            : "grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-5"
+        }
+      >
         {items.map((item) => (
           <div key={item.label} className="flex flex-col gap-1">
             <dt className="label-caps">{item.label}</dt>

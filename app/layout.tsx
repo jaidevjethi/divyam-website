@@ -33,7 +33,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(business.url),
   title: {
-    default: `${business.shortName} — Private Taxis & Spiritual Travel in Varanasi`,
+    default: `${business.shortName} | Private Taxis & Spiritual Travel in Varanasi`,
     template: `%s | ${business.shortName}`,
   },
   description: business.tagline,

@@ -15,19 +15,19 @@ import {
 import { faqs } from "@/content/faqs";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Varanasi Local Sightseeing Taxi — Temple & Ghat Tours",
+  title: "Varanasi Local Sightseeing Taxi | Temple & Ghat Tours",
   description:
-    "Half-day and full-day private taxi for Varanasi sightseeing — Kashi Vishwanath, ghats, Sarnath add-on. Driver waits at each stop. Call or WhatsApp.",
+    "Half-day and full-day private taxi for Varanasi sightseeing: Kashi Vishwanath, ghats, Sarnath add-on. Driver waits at each stop. Call or WhatsApp.",
   path: "/local-sightseeing",
 });
 
 const plans = [
   { name: "Half-day local", duration: "~4–5 hours", coverage: "Kashi Vishwanath area, Dashashwamedh Ghat, drive-past of Manikarnika Ghat", fit: "Sedan or SUV", note: "Best for short-stay travellers, post-arrival evening visits." },
-  { name: "Full-day local", duration: "~8–10 hours", coverage: "Kashi Vishwanath, ghats walk, BHU & New Vishwanath Temple, Sankat Mochan, evening aarti at Dashashwamedh", fit: "SUV/MUV for families, sedan for couples", note: "The complete first-visit plan — temples in the morning, ghat aarti to close." },
+  { name: "Full-day local", duration: "~8–10 hours", coverage: "Kashi Vishwanath, ghats walk, BHU & New Vishwanath Temple, Sankat Mochan, evening aarti at Dashashwamedh", fit: "SUV/MUV for families, sedan for couples", note: "The complete first-visit plan: temples in the morning, ghat aarti to close." },
   { name: "Temple-focused circuit", duration: "~6–8 hours", coverage: "Kashi Vishwanath, Sankat Mochan, Durga Temple, Tulsi Manas, BHU New Vishwanath", fit: "SUV/MUV recommended", note: "For pilgrims focusing on darshan over photography." },
   { name: "Ghat-focused walk plan", duration: "~5–7 hours", coverage: "Assi Ghat sunrise, ghat walk to Dashashwamedh, optional boat ride, evening aarti", fit: "Sedan or SUV", note: "Driver coordinates drop and pickup at multiple ghats so you walk without rushing." },
   { name: "Sarnath add-on", duration: "+3 hours added to local plan", coverage: "Dhamek Stupa, Mulagandha Kuti Vihara, Sarnath Museum (Fri closed)", fit: "Sedan or SUV", note: "Combine with a half-day plan for a complete Varanasi + Sarnath day." },
-  { name: "Sunrise / evening plan", duration: "~3–4 hours", coverage: "Sunrise on the Ganga or evening Ganga aarti at Dashashwamedh", fit: "Sedan", note: "Pickup before dawn or in the evening — for travellers who only need one signature experience." },
+  { name: "Sunrise / evening plan", duration: "~3–4 hours", coverage: "Sunrise on the Ganga or evening Ganga aarti at Dashashwamedh", fit: "Sedan", note: "Pickup before dawn or in the evening, for travellers who only need one signature experience." },
 ];
 
 export default function LocalSightseeingPage() {
@@ -37,8 +37,8 @@ export default function LocalSightseeingPage() {
         eyebrow="Local sightseeing taxi"
         title={
           <>
-            Sightseeing planned like a{" "}
-            <em className="editorial">visit, not a checklist.</em>
+            Varanasi sightseeing taxi,{" "}
+            <em className="editorial">planned at your pace.</em>
           </>
         }
         lede="Half-day or full-day plans across Varanasi's temples, ghats and BHU campus, with optional Sarnath add-ons. Driver coordinates drop-and-walk points and waits at each stop."
@@ -53,7 +53,7 @@ export default function LocalSightseeingPage() {
         }}
         aside={
           <AnswerBlock
-            answer="Sightseeing as transportation planning — not a generic list of attractions."
+            answer="Sightseeing planned as transport: drop points, a waiting driver, and realistic timings."
             items={[
               { label: "Half-day", value: "~4–5 hours" },
               { label: "Full-day", value: "~8–10 hours" },

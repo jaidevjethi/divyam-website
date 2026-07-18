@@ -54,21 +54,13 @@ export function PackageSpotlight() {
                     No. {String(i + 1).padStart(2, "0")}
                   </p>
                   <h3 className="font-serif text-[clamp(1.5rem,2.8vw,2.2rem)] font-bold text-ink leading-[1.1] tracking-[-0.015em]">
-                    {pkg.name.split("—")[0].trim()}
-                    {pkg.name.includes("—") && (
-                      <>
-                        <span className="mx-2 text-mist">—</span>
-                        <em className="editorial text-terracotta text-[0.85em]">
-                          {pkg.name.split("—")[1].trim()}
-                        </em>
-                      </>
-                    )}
+                    {pkg.name}
                   </h3>
                   <p className="mt-4 font-sans text-[12px] tracking-[0.16em] uppercase text-mist font-bold">
                     {pkg.duration}
                   </p>
                   <p className="mt-2 text-[13px] text-mist italic">
-                    Custom quote on WhatsApp — priced to your group and dates
+                    Custom quote on WhatsApp, priced to your group and dates
                   </p>
                   {pkg.tags && pkg.tags.length > 0 && (
                     <ul className="mt-4 flex flex-wrap gap-1.5">

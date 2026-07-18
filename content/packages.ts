@@ -23,7 +23,7 @@ export type Package = {
 export const packages: Package[] = [
   {
     slug: "varanasi-local-one-day",
-    name: "Varanasi Local — One-Day Tour",
+    name: "Varanasi Local One-Day Tour",
     idealFor: "First-time visitors and short-stay tourists",
     duration: "1 day (≈8–10 hours)",
     mainStops: [
@@ -66,13 +66,13 @@ export const packages: Package[] = [
   },
   {
     slug: "spiritual-circuit-3-day",
-    name: "Varanasi · Sarnath · Prayagraj — 3-Day Spiritual Circuit",
+    name: "3-Day Spiritual Circuit: Varanasi, Sarnath, Prayagraj",
     idealFor: "Pilgrims and travellers wanting unhurried darshan",
     duration: "3 days / 2 nights",
     mainStops: [
       "Day 1: Varanasi arrival, Kashi Vishwanath, evening aarti",
       "Day 2: Sarnath morning, Varanasi ghats afternoon",
-      "Day 3: Prayagraj day trip — Triveni Sangam, Anand Bhavan",
+      "Day 3: Prayagraj day trip with Triveni Sangam and Anand Bhavan",
     ],
     vehicleFit: "SUV/MUV for 2–4 travellers, tempo traveller for groups",
     guideOption: "Guide can be arranged per day or for the full circuit.",
@@ -98,7 +98,7 @@ export const packages: Package[] = [
     vehicleFit: "SUV/MUV with extra luggage room",
     guideOption: "Optional guide for orientation in the temple area.",
     summary:
-      "A practical plan for travellers arriving in the morning and leaving the next day — covers the essential Varanasi experience in one well-paced day from the airport.",
+      "A practical plan for travellers arriving in the morning and leaving the next day. It covers the essential Varanasi experience in one well-paced day from the airport.",
     image: "/images/vehicle-luggage-2.webp",
     tags: ["Short-stay", "Airport arrival"],
     customizable: true,

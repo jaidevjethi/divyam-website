@@ -15,7 +15,7 @@ import {
 import { faqs } from "@/content/faqs";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Outstation Taxi from Varanasi — Prayagraj, Ayodhya, Bodhgaya",
+  title: "Outstation Taxi from Varanasi | Prayagraj, Ayodhya, Bodhgaya",
   description:
     "Private outstation cabs from Varanasi to Prayagraj, Ayodhya, Bodhgaya, Vindhyachal. One-way, round-trip and multi-day spiritual circuits.",
   path: "/outstation-taxi",
@@ -24,7 +24,7 @@ export const metadata: Metadata = buildMetadata({
 const tripFormats = [
   { title: "One-way drop", body: "Continuing onwards from a destination (Prayagraj to Lucknow, Bodhgaya to Patna)? A one-way drop avoids paying for return mileage." },
   { title: "Same-day round trip", body: "Possible for Sarnath, Prayagraj, Vindhyachal, Chunar. Best for shorter routes where you don't need an overnight." },
-  { title: "Two-day with overnight", body: "Recommended for Ayodhya and Bodhgaya — far less rushed and easier on elderly travellers." },
+  { title: "Two-day with overnight", body: "Recommended for Ayodhya and Bodhgaya. Far less rushed and easier on elderly travellers." },
   { title: "Multi-day spiritual circuit", body: "Varanasi + Sarnath + Prayagraj + Ayodhya in 3–5 days with one vehicle and one familiar driver throughout." },
 ];
 
@@ -77,7 +77,22 @@ export default function OutstationTaxiPage() {
         </Container>
       </section>
 
-      <PopularRoutes />
+      <PopularRoutes
+        slugs={[
+          "varanasi-to-prayagraj-taxi",
+          "varanasi-to-ayodhya-taxi",
+          "varanasi-to-bodhgaya-taxi",
+          "varanasi-to-vindhyachal-taxi",
+        ]}
+        eyebrow="Outstation routes"
+        heading={
+          <>
+            The outstation trips we run{" "}
+            <em className="editorial">most often.</em>
+          </>
+        }
+        sub="Each route page covers the drive time, the right vehicle, and how travellers combine the trip with an overnight or a second destination."
+      />
 
       <section className="section-tight bg-cream-deep">
         <Container width="wide">
@@ -97,7 +112,7 @@ export default function OutstationTaxiPage() {
 
       <ContactConversion
         heading="Plan a multi-stop spiritual route from Varanasi."
-        body="Tell us the destinations and rough dates. We share a comfortable order, vehicle fit and indicative timing — back to you on WhatsApp."
+        body="Tell us the destinations and rough dates. We share a comfortable order, vehicle fit and indicative timing, back to you on WhatsApp."
         context="outstation"
       />
 

@@ -30,7 +30,7 @@ export function VehicleSelector() {
             <p className="label-caps">Vehicles</p>
             <h2 className="mt-5 text-display-md text-ink">
               One vehicle per{" "}
-              <em className="editorial">shape of trip</em> — not per model name.
+              <em className="editorial">shape of trip</em>, not per model name.
             </h2>
             <p className="mt-6 pull-quote text-[17px] text-ink-soft leading-[1.6]">
               Pick by traveller count and luggage. We confirm the exact model

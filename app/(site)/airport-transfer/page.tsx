@@ -14,7 +14,7 @@ import {
 import { faqs } from "@/content/faqs";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Varanasi Airport Taxi — Babatpur Pickup & Drop",
+  title: "Varanasi Airport Taxi | Babatpur Pickup & Drop",
   description:
     "Private taxi from Varanasi Airport (Lal Bahadur Shastri / VNS) to your hotel, ghats or Kashi Vishwanath. Driver tracks flight, waits with name board.",
   path: "/airport-transfer",
@@ -46,7 +46,7 @@ const pickupSteps = [
 const drops = [
   {
     name: "Airport → hotel",
-    body: "Hotels in Cantonment, Lanka, BHU area or the old-city lanes near the ghats — the driver coordinates the right drop point depending on lane access and the time of your arrival.",
+    body: "Hotels in Cantonment, Lanka, BHU area or the old-city lanes near the ghats. The driver coordinates the right drop point depending on lane access and the time of your arrival.",
   },
   {
     name: "Airport → Kashi Vishwanath area",
@@ -54,7 +54,7 @@ const drops = [
   },
   {
     name: "Airport → ghats",
-    body: "Direct drop near Assi Ghat, Dashashwamedh, or another ghat depending on your hotel or arrival timing — useful when you're arriving for the evening aarti.",
+    body: "Direct drop near Assi Ghat, Dashashwamedh, or another ghat depending on your hotel or arrival timing, useful when you're arriving for the evening aarti.",
   },
 ];
 
@@ -65,7 +65,7 @@ export default function AirportTransferPage() {
         eyebrow="Highest-demand service"
         title={
           <>
-            Varanasi airport taxi — a{" "}
+            Varanasi airport taxi with a{" "}
             <em className="editorial">calm arrival</em> after a long flight.
           </>
         }
@@ -174,7 +174,7 @@ export default function AirportTransferPage() {
       <ContactConversion
         heading="Landing in Varanasi soon?"
         accent="Varanasi"
-        body="Share your flight details on WhatsApp. The driver tracks arrival and waits with a name board — late-night and early-morning pickups are routine."
+        body="Share your flight details on WhatsApp. The driver tracks arrival and waits with a name board. Late-night and early-morning pickups are routine."
         context="airport"
       />
 

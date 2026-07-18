@@ -34,7 +34,7 @@ const services = [
   {
     n: "04",
     name: "Tour packages & guides",
-    body: "Curated 1- to 5-day plans with optional local guides for temple-area orientation. Customisable to group size, pace and dates — not rigid catalogue packages.",
+    body: "Curated 1- to 5-day plans with optional local guides for temple-area orientation. Customisable to group size, pace and dates, never a rigid catalogue.",
     href: "/tour-packages",
     image: "/images/service-packages.webp",
     alt: "Group of boats on the Ganga, late morning",
@@ -57,7 +57,7 @@ export function ServiceOverview() {
             <div className="lg:col-span-6 lg:col-start-7 self-end">
               <p className="pull-quote text-[17px] text-ink-soft leading-[1.6] max-w-md">
                 Each service is one phone call and one WhatsApp thread away. No
-                account creation, no multi-step checkout — the friction we
+                account creation, no multi-step checkout. The friction we
                 remove is the reason tourists use us.
               </p>
             </div>

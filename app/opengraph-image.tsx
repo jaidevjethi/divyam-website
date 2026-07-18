@@ -107,9 +107,13 @@ export default async function Image() {
               fontFamily: "sans-serif",
               display: "flex",
               alignItems: "center",
+              gap: 12,
             }}
           >
-            ★ {business.googleRating.value} · {business.googleRating.count} Google reviews
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="#8f7020">
+              <path d="M12 2 L14.9 8.6 L22 9.3 L16.7 14.1 L18.2 21.1 L12 17.5 L5.8 21.1 L7.3 14.1 L2 9.3 L9.1 8.6 Z" />
+            </svg>
+            {business.googleRating.value} · {business.googleRating.count} Google reviews
           </div>
         </div>
       </div>

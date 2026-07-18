@@ -9,9 +9,9 @@ import { breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 import { faqs } from "@/content/faqs";
 
 export const metadata: Metadata = buildMetadata({
-  title: "FAQ — Varanasi Taxi, Airport Transfer, Sightseeing",
+  title: "FAQ | Varanasi Taxi, Airport Transfer, Sightseeing",
   description:
-    "Common questions about booking taxis in Varanasi — payment, airport pickup, sightseeing pace, outstation routes, packages, vehicle choice.",
+    "Common questions about booking taxis in Varanasi: payment, airport pickup, sightseeing pace, outstation routes, packages, vehicle choice.",
   path: "/faq",
 });
 
@@ -36,7 +36,7 @@ export default function FAQPage() {
             <em className="editorial">before booking.</em>
           </>
         }
-        lede="Real answers, written in plain English — grouped by the kind of trip you're planning. If your question isn't here, WhatsApp is the fastest way to get a direct response."
+        lede="Real answers, written in plain English, grouped by the kind of trip you're planning. If your question isn't here, WhatsApp is the fastest way to get a direct response."
         crumbs={[
           { name: "Home", path: "/" },
           { name: "FAQ", path: "/faq" },
@@ -60,7 +60,7 @@ export default function FAQPage() {
 
       <ContactConversion
         heading="Still have a question?"
-        body="WhatsApp is the fastest way to get a direct answer — usually within minutes."
+        body="WhatsApp is the fastest way to get a direct answer, usually within minutes."
       />
 
       <JsonLd data={faqPageSchema(allFaqs)} />

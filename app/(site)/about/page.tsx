@@ -9,7 +9,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 import { business } from "@/content/business";
 
 export const metadata: Metadata = buildMetadata({
-  title: `About — ${business.shortName} Varanasi`,
+  title: `About ${business.shortName} Varanasi`,
   description:
     "Divyam Tours is a local Varanasi taxi and travel service for pilgrims, tourists, families and international visitors. Direct booking, familiar drivers.",
   path: "/about",
@@ -17,9 +17,9 @@ export const metadata: Metadata = buildMetadata({
 
 const values = [
   { title: "Local-first, not corporate", body: "We answer the phone ourselves and remember your trip. No call-centre handoffs, no scripted responses." },
-  { title: "Tourist-focused operations", body: "Most of what we do is help visitors who don't know the city — airport pickups, temple-area drops, route advice. The whole service is shaped by that." },
+  { title: "Tourist-focused operations", body: "Most of what we do is help visitors who don't know the city: airport pickups, temple-area drops, route advice. The whole service is shaped by that." },
   { title: "Honest about what we don't do", body: "We're not a hotel booking site, we don't pretend to be certified guides we aren't, and we don't write fake reviews. What we offer, we offer clearly." },
-  { title: "Direct WhatsApp coordination", body: "From your first message to the end of your trip — one channel, one familiar coordinator. No tickets or forms." },
+  { title: "Direct WhatsApp coordination", body: "From your first message to the end of your trip, one channel and one familiar coordinator. No tickets or forms." },
 ];
 
 export default function AboutPage() {
@@ -43,12 +43,13 @@ export default function AboutPage() {
         }}
       />
 
-      <section className="section-tight">
-        <Container width="narrow">
-          <div className="flex flex-col gap-5 text-[17.5px] text-ink-soft leading-[1.75]">
+      <section className="pb-14 sm:pb-20">
+        <Container width="wide">
+          <div className="grid-12">
+            <div className="lg:col-span-8 flex flex-col gap-5 text-[17.5px] text-ink-soft leading-[1.75]">
             <p className="drop-cap">
               Varanasi is one of the oldest continuously lived-in cities in
-              the world and a major pilgrimage destination — for Hindus,
+              the world and a major pilgrimage destination for Hindus,
               Buddhists, families on multi-stop spiritual routes, and
               first-time international visitors. The city sees a constant
               flow of travellers who need a trusted local for transport and
@@ -59,7 +60,7 @@ export default function AboutPage() {
               service in and around Varanasi. We coordinate airport pickups
               from Lal Bahadur Shastri Airport at Babatpur, run half-day and
               full-day sightseeing across the temples and ghats, and operate
-              outstation cabs to nearby pilgrimage destinations — Sarnath,
+              outstation cabs to nearby pilgrimage destinations: Sarnath,
               Prayagraj, Ayodhya, Bodhgaya and Vindhyachal.
             </p>
             <p>
@@ -70,6 +71,7 @@ export default function AboutPage() {
               ghats, the parking points close to Kashi Vishwanath, and the
               quieter morning windows at Sarnath.
             </p>
+            </div>
           </div>
         </Container>
       </section>
@@ -99,7 +101,7 @@ export default function AboutPage() {
 
       <ContactConversion
         heading="Plan your visit with a local you can call directly."
-        body="Phone or WhatsApp reaches the same coordinator. Tell us what you need — we'll suggest a pace, a vehicle, and an order that works."
+        body="Phone or WhatsApp reaches the same coordinator. Tell us what you need and we'll suggest a pace, a vehicle, and an order that works."
       />
 
       <JsonLd

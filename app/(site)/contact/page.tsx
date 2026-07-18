@@ -11,7 +11,7 @@ import { telHref, whatsappHref, phoneDisplay, whatsappDisplay } from "@/lib/cta"
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Contact Divyam Tours — Varanasi Taxi & Tour Service",
+  title: "Contact Divyam Tours | Varanasi Taxi & Tour Service",
   description:
     "Reach Divyam Tours by phone or WhatsApp for Varanasi taxi, airport pickup, sightseeing or outstation booking. Direct response, no forms required.",
   path: "/contact",
@@ -30,11 +30,11 @@ export default function ContactPage() {
         eyebrow="Direct booking"
         title={
           <>
-            Call or message —{" "}
-            <em className="editorial">we coordinate the rest.</em>
+            Call or message.{" "}
+            <em className="editorial">We coordinate the rest.</em>
           </>
         }
-        lede="Phone and WhatsApp are the fastest way to confirm a vehicle. For longer enquiries — multi-day packages, group bookings — WhatsApp keeps the whole plan in one thread."
+        lede="Phone and WhatsApp are the fastest way to confirm a vehicle. For longer enquiries like multi-day packages and group bookings, WhatsApp keeps the whole plan in one thread."
         crumbs={[
           { name: "Home", path: "/" },
           { name: "Contact", path: "/contact" },
@@ -68,7 +68,7 @@ export default function ContactPage() {
                             <p className="font-serif text-[22px] font-bold text-ink group-hover:text-terracotta transition-colors">{phoneDisplay()}</p>
                           </div>
                         </div>
-                        <p className="hidden sm:block text-[13px] text-mist italic">Direct call — you reach the coordinator, not a call centre</p>
+                        <p className="hidden sm:block text-[13px] text-mist italic">Direct call: you reach the coordinator, not a call centre</p>
                       </a>
                     </li>
                     
@@ -182,7 +182,7 @@ export default function ContactPage() {
                     />
                   </div>
                   <p className="text-[13px] text-mist italic text-center">
-                    Situated in Bhelupur — perfectly placed for fast pickups near Assi Ghat and the main temple corridor.
+                    Situated in Bhelupur, close to Assi Ghat and the main temple corridor for fast pickups.
                   </p>
                 </div>
               </ScrollReveal>

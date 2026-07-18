@@ -11,31 +11,44 @@ const popularityBadge: Record<string, string> = {
   "varanasi-to-sarnath-taxi": "Top sightseeing",
 };
 
-export function PopularRoutes() {
+type Props = {
+  /** Show only these route slugs (default: all routes) */
+  slugs?: string[];
+  eyebrow?: string;
+  heading?: React.ReactNode;
+  sub?: string;
+};
+
+export function PopularRoutes({ slugs, eyebrow, heading, sub }: Props) {
+  const shown = slugs ? routes.filter((r) => slugs.includes(r.slug)) : routes;
+
   return (
     <section className="section bg-cream-deep">
       <Container width="wide">
         <ScrollReveal>
           <div className="grid-12 mb-14 lg:mb-16">
             <div className="lg:col-span-5">
-              <p className="label-caps">Routes index</p>
+              <p className="label-caps">{eyebrow ?? "Routes index"}</p>
               <h2 className="mt-5 text-display-md text-ink">
-                Where travellers go{" "}
-                <em className="editorial">from Varanasi.</em>
+                {heading ?? (
+                  <>
+                    Where travellers go{" "}
+                    <em className="editorial">from Varanasi.</em>
+                  </>
+                )}
               </h2>
             </div>
             <div className="lg:col-span-6 lg:col-start-7 self-end">
               <p className="pull-quote text-[17px] text-ink-soft leading-[1.6] max-w-md">
-                Each route page covers what matters before you call — distance,
-                comfortable duration, vehicle fit, and what travellers usually
-                combine the trip with.
+                {sub ??
+                  "Each route page covers what matters before you call: distance, comfortable duration, vehicle fit, and what travellers usually combine the trip with."}
               </p>
             </div>
           </div>
         </ScrollReveal>
 
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-10 lg:mt-12" staggerDelay={0.06}>
-          {routes.map((route) => {
+          {shown.map((route) => {
             const destination = route.to.startsWith("Varanasi")
               ? route.from
               : route.to;

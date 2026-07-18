@@ -37,11 +37,11 @@ const TRUST_POINTS = [
 const FAQ_ITEMS = [
   {
     q: "Is it safe to take a taxi in Varanasi?",
-    a: "Yes — we assign verified, familiar drivers. You'll get the driver's name and phone number before pickup. Many of our international guests travel solo or as couples without issues.",
+    a: "Yes. We assign verified, familiar drivers. You'll get the driver's name and phone number before pickup. Many of our international guests travel solo or as couples without issues.",
   },
   {
     q: "How do I pay?",
-    a: "We accept cash (INR), UPI, and bank transfer. Your fare is agreed before the trip — no meters, no surprises. For multi-day packages, we can split payments.",
+    a: "We accept cash (INR), UPI, and bank transfer. Your fare is agreed before the trip: no meters, no surprises. For multi-day packages, we can split payments.",
   },
   {
     q: "Can you help me plan my first visit to Varanasi?",
@@ -151,7 +151,7 @@ export function InternationalTravelers() {
                 Chat with us on WhatsApp
               </LinkButton>
               <p className="text-sm text-mist">
-                We reply quickly on WhatsApp — a real person, not a bot.
+                We reply quickly on WhatsApp. A real person, not a bot.
               </p>
             </div>
           </div>

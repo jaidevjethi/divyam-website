@@ -60,7 +60,7 @@ export function Logo({ className, variant = "header" }: Props) {
       <Link
         href="/"
         className={cn("inline-flex items-center gap-3 text-cream", className)}
-        aria-label={`${business.shortName} — home`}
+        aria-label={`${business.shortName} home`}
       >
         <Mark size={34} />
         <span className="flex flex-col leading-tight">
@@ -83,7 +83,7 @@ export function Logo({ className, variant = "header" }: Props) {
         "inline-flex items-center gap-2.5 text-charcoal hover:text-terracotta transition-colors",
         className
       )}
-      aria-label={`${business.shortName} — home`}
+      aria-label={`${business.shortName} home`}
     >
       <Mark />
       <span className="font-serif text-[20px] tracking-[-0.015em] whitespace-nowrap">

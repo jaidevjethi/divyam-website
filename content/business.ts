@@ -39,7 +39,7 @@ export const business = {
   // hoursConfirmed is true, no opening-hours claim renders anywhere and
   // schema omits openingHoursSpecification entirely.
   hours: {
-    display: "Open daily — timings confirmed when you book",
+    display: "Open daily. Timings confirmed when you book",
     hoursConfirmed: false,
     isOpen247: false,
     openingHours: [] as Array<{ days: string[]; opens: string; closes: string }>,
@@ -91,7 +91,7 @@ export const business = {
 
   // Hero photography
   heroImage: "/images/hero-dawn-ghat.webp",
-  heroImageAlt: "Dawn over the Ganga at Varanasi — golden mist, boats and temple spires",
+  heroImageAlt: "Dawn over the Ganga at Varanasi: golden mist, boats and temple spires",
   heroAsideImage: "/images/hero-aarti.webp",
   heroAsideImageAlt: "Priests holding torches at the evening Ganga aarti",
 } as const;

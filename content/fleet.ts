@@ -54,7 +54,7 @@ export const fleet: Vehicle[] = [
     idealTripTypes: [
       "Family airport transfer with luggage",
       "Full-day local sightseeing",
-      "Outstation routes — Prayagraj, Ayodhya, Bodhgaya",
+      "Outstation routes to Prayagraj, Ayodhya, Bodhgaya",
       "Multi-day spiritual circuits",
     ],
     routeSuitability:
@@ -80,7 +80,7 @@ export const fleet: Vehicle[] = [
       "Outstation routes with shared vehicle",
     ],
     routeSuitability:
-      "Best for group routes — Varanasi + Sarnath + Prayagraj + Ayodhya in one comfortable vehicle.",
+      "Best for group routes: Varanasi + Sarnath + Prayagraj + Ayodhya in one comfortable vehicle.",
     examples: ["Force Tempo Traveller"],
     image: "/images/vehicle-tempo-2.webp",
     tags: ["Groups", "Multi-day"],

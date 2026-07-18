@@ -47,6 +47,7 @@ export function RoutePageTemplate({ route }: Props) {
         <Container width="wide">
           <div className="border-t border-line-strong pt-8">
             <AnswerBlock
+              columns={4}
               items={[
                 { label: "Distance", value: route.quickFacts.distance },
                 { label: "Duration", value: route.quickFacts.duration },
@@ -68,7 +69,7 @@ export function RoutePageTemplate({ route }: Props) {
               </ul>
             )}
             <p className="mt-4 text-[13.5px] text-mist italic">
-              Fare confirmed on WhatsApp before the trip — no surprises at the
+              Fare confirmed on WhatsApp before the trip. No surprises at the
               vehicle.
             </p>
           </div>
@@ -138,9 +139,9 @@ export function RoutePageTemplate({ route }: Props) {
                     {route.quickFacts.bestFor.map((b) => (
                       <li
                         key={b}
-                        className="font-serif italic text-[15.5px] text-ink leading-[1.5]"
+                        className="font-serif italic text-[15.5px] text-ink leading-[1.5] pl-4 border-l-2 border-marigold"
                       >
-                        — {b}
+                        {b}
                       </li>
                     ))}
                   </ul>

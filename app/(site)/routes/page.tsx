@@ -11,9 +11,9 @@ import { breadcrumbSchema } from "@/lib/schema";
 import { routes } from "@/content/routes";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Varanasi Taxi Routes — Sarnath, Prayagraj, Ayodhya, Airport",
+  title: "Varanasi Taxi Routes | Sarnath, Prayagraj, Ayodhya, Airport",
   description:
-    "Route-specific taxi pages from Varanasi — Sarnath, Prayagraj, Ayodhya, airport transfer. Distance, duration, vehicle fit, and direct booking.",
+    "Route-specific taxi pages from Varanasi: Sarnath, Prayagraj, Ayodhya, airport transfer. Distance, duration, vehicle fit, and direct booking.",
   path: "/routes",
 });
 
@@ -24,11 +24,11 @@ export default function RoutesHubPage() {
         eyebrow="Route-led booking"
         title={
           <>
-            Taxi routes from Varanasi —{" "}
+            Taxi routes from Varanasi:{" "}
             <em className="editorial">distance, duration, vehicle fit.</em>
           </>
         }
-        lede="Each route page answers the practical questions before you call — how long the drive is, which vehicle suits your group, and what travellers typically combine the trip with."
+        lede="Each route page answers the practical questions before you call: how long the drive is, which vehicle suits your group, and what travellers typically combine the trip with."
         crumbs={[
           { name: "Home", path: "/" },
           { name: "Routes", path: "/routes" },
@@ -133,7 +133,7 @@ export default function RoutesHubPage() {
 
       <ContactConversion
         heading="Not sure which route fits your trip?"
-        body="Tell us where you'd like to go and how many travellers. We share the right combination — vehicle, route, and timing — back on WhatsApp."
+        body="Tell us where you'd like to go and how many travellers. We share the right combination of vehicle, route and timing back on WhatsApp."
       />
 
       <JsonLd
