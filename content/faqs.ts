@@ -89,6 +89,14 @@ export const faqs: FAQGroups = {
   ],
   sightseeing: [
     {
+      q: "Which temples should I visit in Varanasi?",
+      a: "The classic circuit covers Kashi Vishwanath, Kal Bhairav, Sankat Mochan Hanuman, Durga Kund, Tulsi Manas and the New Vishwanath Temple at BHU. All six fit in one 6 to 8 hour day with a driver who knows the darshan timings, and Sarnath adds the Buddhist sites.",
+    },
+    {
+      q: "What food is Varanasi famous for?",
+      a: "Kachori and jalebi breakfasts, tamatar chaat, malai lassi in clay kulhads, winter-only malaiyo, baati chokha and Banarasi paan. The famous shops sit in the old-city lanes near the ghats, so the driver can work two or three stops into a sightseeing day.",
+    },
+    {
       q: "Can Varanasi and Sarnath be done together in one day?",
       a: "Yes. A typical plan is Sarnath in the morning while it's quiet, Varanasi temples and ghats afterwards, ending with the evening aarti.",
     },

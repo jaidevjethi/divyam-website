@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import { buildMetadata } from "@/lib/seo";
 import { Container } from "@/components/ui/Container";
 import { PageHeader } from "@/components/sections/PageHeader";
@@ -44,7 +46,7 @@ export default function TourPackagesPage() {
         ctaContext="package"
         image={{
           src: "/images/service-packages.webp",
-          alt: "Group of boats on the Ganga, late morning",
+          alt: "Colourful rowing boats moored together on the Ganga in golden light",
         }}
         aside={
           <AnswerBlock
@@ -133,6 +135,28 @@ export default function TourPackagesPage() {
                 </div>
               </article>
             ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Food pointer: full guide lives on the sightseeing page, not duplicated here */}
+      <section className="pb-16 sm:pb-20">
+        <Container width="wide">
+          <div className="grid-12 items-baseline border-t border-line pt-10">
+            <p className="lg:col-span-8 font-serif italic text-[clamp(1.1rem,1.6vw,1.35rem)] text-ink leading-[1.5]">
+              Every package leaves room for the Banarasi food trail: kachori
+              and jalebi breakfasts, malai lassi in kulhads, tamatar chaat
+              and paan between the stops.
+            </p>
+            <Link
+              href="/local-sightseeing#food"
+              className="lg:col-span-4 lg:justify-self-end inline-flex items-center gap-2 text-[15px] text-ink hover:text-terracotta transition-colors mt-4 lg:mt-0"
+            >
+              <span className="border-b border-current pb-0.5">
+                See the food guide
+              </span>
+              <ArrowUpRight className="size-4" aria-hidden strokeWidth={1.5} />
+            </Link>
           </div>
         </Container>
       </section>

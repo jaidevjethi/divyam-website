@@ -1,9 +1,9 @@
 /**
  * Image credits manifest.
  *
- * Two sources today:
- *  - "unsplash": stock photography (free license, attribution appreciated)
- *  - "generated": AI-generated illustrative images prepared for Divyam Tours
+ * All imagery is currently "generated": AI-generated illustrative images
+ * prepared for Divyam Tours. The "unsplash" source variant is kept in the
+ * type in case stock returns, but no stock is in use.
  *
  * Replace with the operator's own photography where possible pre-launch —
  * and remove this file (and /credits page) if all images become originals.
@@ -19,15 +19,15 @@ export type PhotoCredit = {
 
 export const photoCredits: PhotoCredit[] = [
   { file: "hero-dawn-ghat.webp", caption: "Dawn over the Ganga: golden mist and boats (illustrative)", source: "generated" },
-  { file: "hero-aarti.webp", caption: "Priests holding torches at evening aarti", source: "unsplash", photographer: "Unsplash contributor", unsplashSlug: "Rn_GBQ7d5HE" },
+  { file: "hero-aarti.webp", caption: "A priest raising the tiered lamp at evening aarti (illustrative)", source: "generated" },
   { file: "operator-chai.webp", caption: "Kulhad chai and marigolds on the dashboard at dawn (illustrative)", source: "generated" },
   { file: "service-sightseeing.webp", caption: "Ghats panorama with moored boats, late morning (illustrative)", source: "generated" },
   { file: "service-outstation.webp", caption: "SUV on a tree-lined UP highway at dawn (illustrative)", source: "generated" },
-  { file: "service-packages.webp", caption: "Group of boats on the Ganges", source: "unsplash", photographer: "Unsplash contributor", unsplashSlug: "wloNuC7qKf8" },
+  { file: "service-packages.webp", caption: "Colourful rowing boats moored on the Ganga (illustrative)", source: "generated" },
   { file: "route-airport-2.webp", caption: "Lal Bahadur Shastri Airport, Varanasi (illustrative)", source: "generated" },
-  { file: "route-sarnath.webp", caption: "Dhamek Stupa, Sarnath", source: "unsplash", photographer: "Braj Kishor", unsplashSlug: "99fJbRG7e4U" },
-  { file: "route-prayagraj.webp", caption: "Crowds at the Triveni Sangam, Prayagraj", source: "unsplash", photographer: "Palak Pitroda", unsplashSlug: "BgXBhOE49sU" },
-  { file: "route-ayodhya.webp", caption: "Temple complex with reflecting water", source: "unsplash", photographer: "Shivam Tiwari", unsplashSlug: "yRzcLVJTxUw" },
+  { file: "route-sarnath.webp", caption: "Dhamek Stupa at Sarnath, morning light (illustrative)", source: "generated" },
+  { file: "route-prayagraj.webp", caption: "Pilgrim boats at the Triveni Sangam, Prayagraj (illustrative)", source: "generated" },
+  { file: "route-ayodhya.webp", caption: "Carved sandstone temple with reflecting pool (illustrative)", source: "generated" },
   { file: "route-bodhgaya.webp", caption: "Mahabodhi Temple, Bodh Gaya (illustrative)", source: "generated" },
   { file: "route-vindhyachal.webp", caption: "Devi temple entrance with marigold sellers, Vindhyachal (illustrative)", source: "generated" },
   { file: "route-temple-tour.webp", caption: "Kashi Vishwanath spire over old-city rooftops (illustrative)", source: "generated" },
@@ -43,7 +43,9 @@ export const photoCredits: PhotoCredit[] = [
   { file: "package-sarnath-2.webp", caption: "Sarnath day trip (illustrative)", source: "generated" },
   { file: "package-circuit-2.webp", caption: "Spiritual circuit (illustrative)", source: "generated" },
   { file: "story-1-2.webp", caption: "Dawn over the Varanasi ghats (illustrative)", source: "generated" },
-  { file: "story-1.webp", caption: "Priests at the fire ceremony", source: "unsplash", photographer: "Unsplash contributor", unsplashSlug: "05DurkzaUsg" },
+  { file: "story-1.webp", caption: "The aarti lamp held over the river at night (illustrative)", source: "generated" },
+  { file: "food-kachori.webp", caption: "Kachori, jalebi and kulhad chai in the old city (illustrative)", source: "generated" },
+  { file: "food-lassi.webp", caption: "Malai lassi in a kulhad with saffron and pistachio (illustrative)", source: "generated" },
   { file: "story-2-2.webp", caption: "Lane approaching the Kashi Vishwanath corridor (illustrative)", source: "generated" },
   { file: "story-3-2.webp", caption: "Evening Ganga aarti at Dashashwamedh (illustrative)", source: "generated" },
 ];

@@ -184,6 +184,36 @@ export function touristTripSchemaFromPackage(pkg: Package) {
   };
 }
 
+/**
+ * ItemList of TouristAttraction entities for the temple guide.
+ * Gives answer engines a structured list of the famous sights the
+ * sightseeing page describes in prose.
+ */
+export function templeAttractionsSchema(
+  temples: readonly { name: string; detail: string }[],
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Famous ancient temples in Varanasi",
+    itemListElement: temples.map((t, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "TouristAttraction",
+        name: t.name,
+        description: t.detail,
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Varanasi",
+          addressRegion: "Uttar Pradesh",
+          addressCountry: "IN",
+        },
+      },
+    })),
+  };
+}
+
 export function faqPageSchema(faqs: readonly FAQ[]) {
   return {
     "@context": "https://schema.org",

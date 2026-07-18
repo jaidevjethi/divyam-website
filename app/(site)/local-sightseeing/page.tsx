@@ -6,18 +6,22 @@ import { AnswerBlock } from "@/components/sections/AnswerBlock";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { ContactConversion } from "@/components/sections/ContactConversion";
 import { VehicleSelector } from "@/components/sections/VehicleSelector";
+import { TempleShowcase } from "@/components/sections/TempleShowcase";
+import { FoodTrail } from "@/components/sections/FoodTrail";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
   breadcrumbSchema,
   faqPageSchema,
   serviceSchema,
+  templeAttractionsSchema,
 } from "@/lib/schema";
 import { faqs } from "@/content/faqs";
+import { temples } from "@/content/places";
 
 export const metadata: Metadata = buildMetadata({
   title: "Varanasi Local Sightseeing Taxi | Temple & Ghat Tours",
   description:
-    "Half-day and full-day private taxi for Varanasi sightseeing: Kashi Vishwanath, ghats, Sarnath add-on. Driver waits at each stop. Call or WhatsApp.",
+    "Half-day and full-day Varanasi sightseeing taxi: Kashi Vishwanath, famous temples, ghats, Sarnath add-on and Banarasi food stops. Book on WhatsApp.",
   path: "/local-sightseeing",
 });
 
@@ -87,9 +91,13 @@ export default function LocalSightseeingPage() {
         </Container>
       </section>
 
+      <TempleShowcase />
+
       <VehicleSelector />
 
-      <section className="section-tight bg-cream-deep">
+      <FoodTrail />
+
+      <section className="section-tight bg-cream-deep border-t border-line">
         <Container width="wide">
           <div className="grid-12">
             <div className="lg:col-span-4">
@@ -120,6 +128,7 @@ export default function LocalSightseeingPage() {
         })}
       />
       <JsonLd data={faqPageSchema(faqs.sightseeing)} />
+      <JsonLd data={templeAttractionsSchema(temples)} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },

@@ -19,7 +19,7 @@ export default function CreditsPage() {
       <PageHeader
         eyebrow="Photography"
         title="Image credits."
-        lede="Photography on this site is sourced from Unsplash under their free license, alongside AI-generated illustrative images prepared for Divyam Tours. Real operator photography will replace these over time."
+        lede="Imagery on this site is AI-generated illustrative photography prepared for Divyam Tours. Real operator photography will replace these over time."
         crumbs={[
           { name: "Home", path: "/" },
           { name: "Credits", path: "/credits" },
