@@ -23,7 +23,7 @@ export function Hero() {
           </p>
         </ScrollReveal>
 
-        <div className="mt-10 lg:mt-14 grid-12 items-end">
+        <div className="mt-10 lg:mt-14 grid-12 items-stretch">
           {/* Type column */}
           <div className="lg:col-span-7">
             <ScrollReveal delay={0.1}>
@@ -96,10 +96,12 @@ export function Hero() {
             )}
           </div>
 
-          {/* Photo aside */}
+          {/* Photo aside: stretches to the exact height of the type column on
+              lg+ so headline top and image top start together and the bottoms
+              close together; stacks at 4:3 below lg. */}
           <div className="lg:col-span-5 relative">
-            <ScrollReveal variant="scale-in" delay={0.2}>
-              <div className="img-wrap relative aspect-[3/4] w-full rounded-2xl shadow-[0_20px_60px_-15px_rgba(154,52,18,0.18)] border border-line/50">
+            <ScrollReveal variant="scale-in" delay={0.2} className="lg:h-full">
+              <div className="img-wrap relative aspect-[4/3] lg:aspect-auto lg:h-full w-full rounded-2xl shadow-[0_20px_60px_-15px_rgba(154,52,18,0.18)] border border-line/50">
                 <Image
                   src={business.heroAsideImage}
                   alt={business.heroAsideImageAlt}

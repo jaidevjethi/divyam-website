@@ -21,6 +21,8 @@ type Props = {
 
 export function PopularRoutes({ slugs, eyebrow, heading, sub }: Props) {
   const shown = slugs ? routes.filter((r) => slugs.includes(r.slug)) : routes;
+  // Complete rows beat orphans: sets of 4 lay out 4-up on lg, others 3-up.
+  const lgCols = shown.length % 4 === 0 ? "lg:grid-cols-4" : "lg:grid-cols-3";
 
   return (
     <section className="section bg-cream-deep">
@@ -47,7 +49,7 @@ export function PopularRoutes({ slugs, eyebrow, heading, sub }: Props) {
           </div>
         </ScrollReveal>
 
-        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-10 lg:mt-12" staggerDelay={0.06}>
+        <StaggerContainer className={`grid grid-cols-1 md:grid-cols-2 ${lgCols} gap-6 lg:gap-7 mt-10 lg:mt-12`} staggerDelay={0.06}>
           {shown.map((route) => {
             const destination = route.to.startsWith("Varanasi")
               ? route.from

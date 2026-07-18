@@ -44,7 +44,7 @@ export default function RoutesHubPage() {
           </div>
           
           <div className="border-t border-line-strong mb-16">
-            <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-10" staggerDelay={0.06}>
+            <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7 mt-10" staggerDelay={0.06}>
               {routes.filter(r => ["varanasi-airport-to-city-taxi", "varanasi-local-temple-tour", "varanasi-full-day-sightseeing", "varanasi-to-sarnath-taxi"].includes(r.slug)).map((route) => {
                 const destination = route.to.startsWith("Varanasi") ? route.from : route.to;
                 const context = route.quickFacts.tripTypes[0];
@@ -89,7 +89,7 @@ export default function RoutesHubPage() {
           </div>
 
           <div className="border-t border-line-strong">
-            <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-10" staggerDelay={0.06}>
+            <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7 mt-10" staggerDelay={0.06}>
               {routes.filter(r => !["varanasi-airport-to-city-taxi", "varanasi-local-temple-tour", "varanasi-full-day-sightseeing", "varanasi-to-sarnath-taxi"].includes(r.slug)).map((route) => {
                 const destination = route.to.startsWith("Varanasi") ? route.from : route.to;
                 const context = route.quickFacts.tripTypes[0];
