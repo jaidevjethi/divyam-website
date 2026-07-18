@@ -151,14 +151,19 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-6 border-t border-cream/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <Logo variant="mark" className="opacity-70" />
-          <div className="flex items-center gap-5 text-[12px] text-cream/65 tracking-wide">
-            <Link href="/credits" className="hover:text-cream/75 transition-colors">
-              Photo credits
-            </Link>
-            <span className="text-cream/25">·</span>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-[12px] text-cream/65 tracking-wide">
             <p>
               &copy; {year} {business.legalName}.
             </p>
+            <span className="text-cream/25 hidden sm:inline">·</span>
+            <a
+              href="https://jaidevj.carrd.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cream/45 hover:text-marigold transition-colors"
+            >
+              Designed &amp; developed by Quadrant Collective
+            </a>
           </div>
         </div>
       </Container>

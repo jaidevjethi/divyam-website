@@ -1,6 +1,17 @@
+"use client";
+
 import Link from "next/link";
 import { business } from "@/content/business";
 import { cn } from "@/lib/utils";
+
+/** Already on the target page? Then a logo click should glide back to the top. */
+function scrollTopIfSamePage(e: React.MouseEvent<HTMLAnchorElement>) {
+  const target = new URL(e.currentTarget.href, window.location.href);
+  if (target.pathname === window.location.pathname) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+}
 
 type Props = {
   className?: string;
@@ -59,6 +70,7 @@ export function Logo({ className, variant = "header" }: Props) {
     return (
       <Link
         href="/"
+        onClick={scrollTopIfSamePage}
         className={cn("inline-flex items-center gap-3 text-cream", className)}
         aria-label={`${business.shortName} home`}
       >
@@ -79,6 +91,7 @@ export function Logo({ className, variant = "header" }: Props) {
   return (
     <Link
       href="/"
+      onClick={scrollTopIfSamePage}
       className={cn(
         "inline-flex items-center gap-2.5 text-charcoal hover:text-terracotta transition-colors",
         className
