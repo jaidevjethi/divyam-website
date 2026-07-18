@@ -19,7 +19,7 @@ import { faqPageSchema } from "@/lib/schema";
 import { faqs, HOME_TEASER_COUNT } from "@/content/faqs";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Private Taxi & Tour Service in Varanasi",
+  title: "Divyam Tours Varanasi | Taxi, Airport Pickup, Day Tours",
   description:
     "Local taxi & cab service in Varanasi: airport pickup, temple darshan, sightseeing, outstation routes. Hindi & English support. Book direct on WhatsApp.",
   path: "/",

@@ -36,7 +36,7 @@ export default function TourPackagesPage() {
             <em className="editorial">tuned to your group.</em>
           </>
         }
-        lede="Use the packages below as a starting point. We adjust the order, pace, vehicle and guide to fit your actual group: pilgrim party, family with seniors, international tourists, or short-stay first-time visitors."
+        lede="From a one-day Kashi darshan plan to multi-day spiritual circuits, use the packages below as a starting point. We adjust the order, pace, vehicle and guide to fit your actual group: pilgrim party, family with seniors, international tourists, or short-stay first-time visitors."
         crumbs={[
           { name: "Home", path: "/" },
           { name: "Tour Packages", path: "/tour-packages" },

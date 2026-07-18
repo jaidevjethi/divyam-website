@@ -41,6 +41,10 @@ export const faqs: FAQGroups = {
       a: "Yes. WhatsApp works internationally. Send your dates and flight details before you fly; the vehicle, driver and fare are confirmed in writing on the same thread, so your pickup is arranged before you land.",
     },
     {
+      q: "Is Varanasi the same as Banaras and Kashi?",
+      a: "Yes. Varanasi, Banaras (also spelled Benares) and Kashi are three names for the same city on the Ganga. Kashi is the ancient name used in scriptures and in Kashi Vishwanath, Banaras is the everyday local name, and Varanasi is the official one. We serve the whole city under all three names.",
+    },
+    {
       q: "Can I book a taxi for the same day?",
       a: "Yes. Same-day bookings are routine, especially for airport pickups and local sightseeing. Confirmation depends on driver availability, which we share within minutes on WhatsApp.",
     },
@@ -62,6 +66,10 @@ export const faqs: FAQGroups = {
     },
   ],
   airport: [
+    {
+      q: "How far is Varanasi airport from the city?",
+      a: "Lal Bahadur Shastri Airport at Babatpur is about 22 km from central Varanasi. The drive takes 45 to 60 minutes depending on time of day, slightly longer to the old-city ghats. We confirm your pickup point and timing on WhatsApp before you land.",
+    },
     {
       q: "Will the driver wait if my flight is delayed?",
       a: "Yes. Share the flight number on WhatsApp and the driver tracks arrival status. Normal delays do not cost extra.",
@@ -116,6 +124,10 @@ export const faqs: FAQGroups = {
     },
   ],
   packages: [
+    {
+      q: "How many days are enough for Varanasi?",
+      a: "Two to three days cover the essentials at a comfortable pace: Kashi Vishwanath and the old city, the ghats with the evening Ganga aarti, a sunrise boat ride, and a half-day at Sarnath. Add a day each for Prayagraj, Ayodhya or Bodhgaya trips.",
+    },
     {
       q: "Are packages fixed or customisable?",
       a: "Customisable. The packages on the site are common plans, and we adjust stops, pace and vehicle to your group.",

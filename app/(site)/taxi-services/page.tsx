@@ -18,7 +18,7 @@ import {
 import { faqs } from "@/content/faqs";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Taxi Service in Varanasi | Tourist Cab & Car Rental with Driver",
+  title: "Taxi Service in Varanasi | Cab & Car Rental with Driver",
   description:
     "Private taxi service in Varanasi for tourists: airport pickup, local sightseeing, outstation cabs and group vehicles. Direct call and WhatsApp booking.",
   path: "/taxi-services",

@@ -8,7 +8,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, serviceSchema } from "@/lib/schema";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Tour Guide Service in Varanasi | Local Orientation & Guide+Cab",
+  title: "Varanasi Tour Guide | Temple, Ghat & Sarnath Context",
   description:
     "Local tour guide assistance in Varanasi: temple-area orientation, ghat walks, cultural context. Optional alongside your private taxi or package.",
   path: "/tour-guide",

@@ -11,7 +11,7 @@ import { business } from "@/content/business";
 export const metadata: Metadata = buildMetadata({
   title: `About ${business.shortName} Varanasi`,
   description:
-    "Divyam Tours is a local Varanasi taxi and travel service for pilgrims, tourists, families and international visitors. Direct booking, familiar drivers.",
+    "Divyam Tours is a local taxi and travel service in Varanasi, the city also called Banaras or Kashi. Direct booking for pilgrims, families and tourists.",
   path: "/about",
 });
 
@@ -48,7 +48,8 @@ export default function AboutPage() {
           <div className="grid-12">
             <div className="lg:col-span-8 flex flex-col gap-5 text-[17.5px] text-ink-soft leading-[1.75]">
             <p className="drop-cap">
-              Varanasi is one of the oldest continuously lived-in cities in
+              Varanasi, known to pilgrims as Kashi and to most of India as
+              Banaras, is one of the oldest continuously lived-in cities in
               the world and a major pilgrimage destination for Hindus,
               Buddhists, families on multi-stop spiritual routes, and
               first-time international visitors. The city sees a constant

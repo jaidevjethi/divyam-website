@@ -17,6 +17,28 @@ function safePhone(): string | undefined {
   return isPlaceholder(business.phone.e164) ? undefined : business.phone.e164;
 }
 
+/**
+ * Varanasi as a schema City with its historical names and authoritative
+ * entity links. Anchoring the alternate names (Banaras, Benares, Kashi)
+ * here lets search and answer engines match variant queries to the same
+ * place entity without keyword-stuffing the copy.
+ */
+function varanasiCity() {
+  return {
+    "@type": "City" as const,
+    name: "Varanasi",
+    alternateName: ["Banaras", "Benares", "Kashi"],
+    sameAs: [
+      "https://en.wikipedia.org/wiki/Varanasi",
+      "https://www.wikidata.org/wiki/Q79980",
+    ],
+  };
+}
+
+function cityEntity(name: string) {
+  return name === "Varanasi" ? varanasiCity() : { "@type": "City" as const, name };
+}
+
 export function localBusinessSchema() {
   const phone = safePhone();
   const address = {
@@ -63,10 +85,11 @@ export function localBusinessSchema() {
       latitude: business.geo.latitude,
       longitude: business.geo.longitude,
     },
-    areaServed: business.serviceArea.map((name) => ({
-      "@type": "City",
-      name,
-    })),
+    image: `${siteUrl()}/opengraph-image`,
+    foundingDate: "2015",
+    paymentAccepted: "Cash, UPI, Net Banking",
+    currenciesAccepted: "INR",
+    areaServed: business.serviceArea.map(cityEntity),
     ...(sameAs.length > 0 && { sameAs }),
     founder: {
       "@type": "Person",
@@ -75,6 +98,14 @@ export function localBusinessSchema() {
       knowsLanguage: ["en", "hi"],
     },
     knowsLanguage: ["en", "hi"],
+    knowsAbout: [
+      "Varanasi airport transfers",
+      "Kashi Vishwanath temple visits",
+      "Ganga aarti at Dashashwamedh Ghat",
+      "Sarnath day trips",
+      "Varanasi sightseeing routes",
+      "Outstation taxi routes to Prayagraj, Ayodhya and Bodhgaya",
+    ],
     // Opening hours are omitted until the operator confirms them.
     ...(business.hours.hoursConfirmed
       ? {
@@ -110,10 +141,7 @@ export function serviceSchema(args: {
     description: args.description,
     serviceType: args.serviceType,
     provider: { "@id": `${siteUrl()}#business` },
-    areaServed: (args.areaServed ?? business.serviceArea).map((name) => ({
-      "@type": "City",
-      name,
-    })),
+    areaServed: (args.areaServed ?? business.serviceArea).map(cityEntity),
     url: args.url,
   };
 }
@@ -189,7 +217,9 @@ export function websiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: business.shortName,
+    alternateName: [business.gbpName, "Divyam Tours Varanasi"],
     url: siteUrl(),
     inLanguage: "en-IN",
+    publisher: { "@id": `${siteUrl()}#business` },
   };
 }
