@@ -1,0 +1,414 @@
+{
+  "/images/band-river.webp": [
+    {
+      "w": 960,
+      "src": "/images/band-river@960w.webp"
+    },
+    {
+      "w": 1920,
+      "src": "/images/band-river.webp"
+    }
+  ],
+  "/images/fleet-lineup.webp": [
+    {
+      "w": 400,
+      "src": "/images/fleet-lineup@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/fleet-lineup@800w.webp"
+    },
+    {
+      "w": 1200,
+      "src": "/images/fleet-lineup.webp"
+    }
+  ],
+  "/images/food-kachori.webp": [
+    {
+      "w": 400,
+      "src": "/images/food-kachori@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/food-kachori@800w.webp"
+    },
+    {
+      "w": 1200,
+      "src": "/images/food-kachori.webp"
+    }
+  ],
+  "/images/food-lassi.webp": [
+    {
+      "w": 400,
+      "src": "/images/food-lassi@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/food-lassi@800w.webp"
+    },
+    {
+      "w": 1200,
+      "src": "/images/food-lassi.webp"
+    }
+  ],
+  "/images/guide-ghats.webp": [
+    {
+      "w": 400,
+      "src": "/images/guide-ghats@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/guide-ghats@800w.webp"
+    },
+    {
+      "w": 1200,
+      "src": "/images/guide-ghats.webp"
+    }
+  ],
+  "/images/hero-aarti.webp": [
+    {
+      "w": 400,
+      "src": "/images/hero-aarti@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/hero-aarti@800w.webp"
+    },
+    {
+      "w": 1200,
+      "src": "/images/hero-aarti.webp"
+    }
+  ],
+  "/images/hero-dawn-ghat.webp": [
+    {
+      "w": 960,
+      "src": "/images/hero-dawn-ghat@960w.webp"
+    },
+    {
+      "w": 1920,
+      "src": "/images/hero-dawn-ghat.webp"
+    }
+  ],
+  "/images/operator-chai.webp": [
+    {
+      "w": 400,
+      "src": "/images/operator-chai@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/operator-chai@800w.webp"
+    },
+    {
+      "w": 1200,
+      "src": "/images/operator-chai.webp"
+    }
+  ],
+  "/images/package-circuit-2.webp": [
+    {
+      "w": 400,
+      "src": "/images/package-circuit-2@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/package-circuit-2@800w.webp"
+    },
+    {
+      "w": 1024,
+      "src": "/images/package-circuit-2.webp"
+    }
+  ],
+  "/images/package-local.webp": [
+    {
+      "w": 400,
+      "src": "/images/package-local@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/package-local@800w.webp"
+    },
+    {
+      "w": 1200,
+      "src": "/images/package-local.webp"
+    }
+  ],
+  "/images/package-sarnath-2.webp": [
+    {
+      "w": 400,
+      "src": "/images/package-sarnath-2@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/package-sarnath-2@800w.webp"
+    },
+    {
+      "w": 1024,
+      "src": "/images/package-sarnath-2.webp"
+    }
+  ],
+  "/images/route-airport-2.webp": [
+    {
+      "w": 400,
+      "src": "/images/route-airport-2@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/route-airport-2@800w.webp"
+    },
+    {
+      "w": 1024,
+      "src": "/images/route-airport-2.webp"
+    }
+  ],
+  "/images/route-ayodhya.webp": [
+    {
+      "w": 400,
+      "src": "/images/route-ayodhya@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/route-ayodhya@800w.webp"
+    },
+    {
+      "w": 1200,
+      "src": "/images/route-ayodhya.webp"
+    }
+  ],
+  "/images/route-bodhgaya.webp": [
+    {
+      "w": 400,
+      "src": "/images/route-bodhgaya@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/route-bodhgaya@800w.webp"
+    },
+    {
+      "w": 1200,
+      "src": "/images/route-bodhgaya.webp"
+    }
+  ],
+  "/images/route-prayagraj.webp": [
+    {
+      "w": 400,
+      "src": "/images/route-prayagraj@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/route-prayagraj@800w.webp"
+    },
+    {
+      "w": 1200,
+      "src": "/images/route-prayagraj.webp"
+    }
+  ],
+  "/images/route-sarnath.webp": [
+    {
+      "w": 400,
+      "src": "/images/route-sarnath@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/route-sarnath@800w.webp"
+    },
+    {
+      "w": 1200,
+      "src": "/images/route-sarnath.webp"
+    }
+  ],
+  "/images/route-sightseeing.webp": [
+    {
+      "w": 400,
+      "src": "/images/route-sightseeing@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/route-sightseeing@800w.webp"
+    },
+    {
+      "w": 1200,
+      "src": "/images/route-sightseeing.webp"
+    }
+  ],
+  "/images/route-temple-tour.webp": [
+    {
+      "w": 400,
+      "src": "/images/route-temple-tour@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/route-temple-tour@800w.webp"
+    },
+    {
+      "w": 1200,
+      "src": "/images/route-temple-tour.webp"
+    }
+  ],
+  "/images/route-vindhyachal.webp": [
+    {
+      "w": 400,
+      "src": "/images/route-vindhyachal@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/route-vindhyachal@800w.webp"
+    },
+    {
+      "w": 1200,
+      "src": "/images/route-vindhyachal.webp"
+    }
+  ],
+  "/images/service-outstation.webp": [
+    {
+      "w": 400,
+      "src": "/images/service-outstation@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/service-outstation@800w.webp"
+    },
+    {
+      "w": 1200,
+      "src": "/images/service-outstation.webp"
+    }
+  ],
+  "/images/service-packages.webp": [
+    {
+      "w": 400,
+      "src": "/images/service-packages@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/service-packages@800w.webp"
+    },
+    {
+      "w": 1200,
+      "src": "/images/service-packages.webp"
+    }
+  ],
+  "/images/service-sightseeing.webp": [
+    {
+      "w": 400,
+      "src": "/images/service-sightseeing@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/service-sightseeing@800w.webp"
+    },
+    {
+      "w": 1200,
+      "src": "/images/service-sightseeing.webp"
+    }
+  ],
+  "/images/story-1-2.webp": [
+    {
+      "w": 400,
+      "src": "/images/story-1-2@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/story-1-2@800w.webp"
+    },
+    {
+      "w": 1024,
+      "src": "/images/story-1-2.webp"
+    }
+  ],
+  "/images/story-1.webp": [
+    {
+      "w": 400,
+      "src": "/images/story-1@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/story-1@800w.webp"
+    },
+    {
+      "w": 1600,
+      "src": "/images/story-1.webp"
+    }
+  ],
+  "/images/story-2-2.webp": [
+    {
+      "w": 400,
+      "src": "/images/story-2-2@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/story-2-2@800w.webp"
+    },
+    {
+      "w": 1024,
+      "src": "/images/story-2-2.webp"
+    }
+  ],
+  "/images/story-3-2.webp": [
+    {
+      "w": 400,
+      "src": "/images/story-3-2@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/story-3-2@800w.webp"
+    },
+    {
+      "w": 1024,
+      "src": "/images/story-3-2.webp"
+    }
+  ],
+  "/images/vehicle-luggage-2.webp": [
+    {
+      "w": 400,
+      "src": "/images/vehicle-luggage-2@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/vehicle-luggage-2@800w.webp"
+    },
+    {
+      "w": 1024,
+      "src": "/images/vehicle-luggage-2.webp"
+    }
+  ],
+  "/images/vehicle-sedan-2.webp": [
+    {
+      "w": 400,
+      "src": "/images/vehicle-sedan-2@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/vehicle-sedan-2@800w.webp"
+    },
+    {
+      "w": 1024,
+      "src": "/images/vehicle-sedan-2.webp"
+    }
+  ],
+  "/images/vehicle-suv-2.webp": [
+    {
+      "w": 400,
+      "src": "/images/vehicle-suv-2@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/vehicle-suv-2@800w.webp"
+    },
+    {
+      "w": 1024,
+      "src": "/images/vehicle-suv-2.webp"
+    }
+  ],
+  "/images/vehicle-tempo-2.webp": [
+    {
+      "w": 400,
+      "src": "/images/vehicle-tempo-2@400w.webp"
+    },
+    {
+      "w": 800,
+      "src": "/images/vehicle-tempo-2@800w.webp"
+    },
+    {
+      "w": 1024,
+      "src": "/images/vehicle-tempo-2.webp"
+    }
+  ]
+}

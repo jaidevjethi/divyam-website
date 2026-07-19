@@ -17,6 +17,11 @@ const nextConfig: NextConfig = {
   images: {
     loader: "custom",
     loaderFile: "./image-loader.ts",
+    // Match the rungs built by scripts/gen-image-variants.mjs so next/image
+    // asks for widths that actually exist, instead of emitting a srcset full
+    // of duplicate URLs that all resolve to the same file.
+    deviceSizes: [400, 800, 1200, 1920],
+    imageSizes: [96, 200, 384],
   },
 };
 
