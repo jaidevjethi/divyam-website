@@ -35,7 +35,7 @@ export default function OutstationTaxiPage() {
         eyebrow="Outstation cab · Varanasi"
         title={
           <>
-            Outstation taxi to{" "}
+            Outstation taxi from Varanasi to{" "}
             <em className="editorial">nearby spiritual circuits.</em>
           </>
         }

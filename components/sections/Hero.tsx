@@ -27,21 +27,20 @@ export function Hero() {
           {/* Type column */}
           <div className="lg:col-span-7">
             <ScrollReveal delay={0.1}>
-              <h1 className="text-[clamp(3rem,7.5vw,6.5rem)] leading-[0.98] tracking-tight text-ink font-bold max-w-[17ch]">
-                Private taxis in{" "}
+              <h1 className="text-[clamp(2.05rem,4.6vw,3.85rem)] leading-[1.05] tracking-[-0.02em] text-ink font-bold max-w-[20ch]">
                 <em className="editorial text-transparent bg-clip-text bg-gradient-to-r from-terracotta to-sindoor">
-                  Varanasi.
-                </em>
-                <br />
-                Dawn ghats. Calm arrivals.
+                  Varanasi taxi service
+                </em>{" "}
+                for airport pickups, sightseeing and outstation trips.
               </h1>
             </ScrollReveal>
 
             <ScrollReveal delay={0.2}>
-              <p className="mt-8 lg:mt-10 max-w-2xl pull-quote text-[clamp(1.1rem,1.55vw,1.45rem)] text-ink-soft leading-[1.6]">
-                A small local taxi service in Varanasi for pilgrims, families,
-                foreign visitors and the kind of travellers who would rather have
-                a clean vehicle and a driver who knows the lanes than another app.
+              <p className="mt-7 lg:mt-9 max-w-2xl pull-quote text-[clamp(1.05rem,1.35vw,1.3rem)] text-ink-soft leading-[1.6]">
+                A local cab service for pilgrims, families and foreign visitors to
+                Varanasi, also known as Banaras and Kashi. Book direct on WhatsApp
+                in English or Hindi. Rated {business.googleRating.value} stars
+                across {business.googleRating.count} Google reviews.
               </p>
             </ScrollReveal>
 

@@ -30,8 +30,8 @@ export default function ContactPage() {
         eyebrow="Direct booking"
         title={
           <>
-            Call or message.{" "}
-            <em className="editorial">We coordinate the rest.</em>
+            Book a Varanasi taxi by{" "}
+            <em className="editorial">phone or WhatsApp.</em>
           </>
         }
         lede="Phone and WhatsApp are the fastest way to confirm a vehicle. For longer enquiries like multi-day packages and group bookings, WhatsApp keeps the whole plan in one thread."

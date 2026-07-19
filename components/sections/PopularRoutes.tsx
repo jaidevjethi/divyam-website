@@ -34,7 +34,7 @@ export function PopularRoutes({ slugs, eyebrow, heading, sub }: Props) {
               <h2 className="mt-5 text-display-md text-ink">
                 {heading ?? (
                   <>
-                    Where travellers go{" "}
+                    Popular taxi routes{" "}
                     <em className="editorial">from Varanasi.</em>
                   </>
                 )}

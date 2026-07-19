@@ -26,8 +26,8 @@ export default function ReviewsPage() {
         eyebrow="Reviews"
         title={
           <>
-            What travellers say{" "}
-            <em className="editorial">about their trips.</em>
+            What travellers say about our{" "}
+            <em className="editorial">Varanasi taxi service.</em>
           </>
         }
         lede={`Quoted word-for-word from our Google Business Profile, rated ${business.googleRating.value}★ across ${business.googleRating.count} reviews.`}

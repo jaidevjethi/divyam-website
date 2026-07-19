@@ -32,8 +32,8 @@ export default function FAQPage() {
         eyebrow="FAQ"
         title={
           <>
-            Questions travellers ask{" "}
-            <em className="editorial">before booking.</em>
+            Varanasi taxi questions,{" "}
+            <em className="editorial">answered before you book.</em>
           </>
         }
         lede="Real answers, written in plain English, grouped by the kind of trip you're planning. If your question isn't here, WhatsApp is the fastest way to get a direct response."

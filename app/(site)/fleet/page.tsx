@@ -25,8 +25,8 @@ export default function FleetPage() {
         eyebrow="Vehicles"
         title={
           <>
-            Pick a vehicle by{" "}
-            <em className="editorial">group size and luggage</em>, not model jargon.
+            Pick your Varanasi taxi by{" "}
+            <em className="editorial">group size and luggage.</em>
           </>
         }
         lede="Our fleet covers every common Varanasi tourist scenario. The category descriptions below tell you what each vehicle suits; actual models in service can be confirmed on WhatsApp."

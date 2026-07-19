@@ -20,8 +20,8 @@ export function Testimonials() {
           <div className="mb-16 max-w-2xl">
             <p className="label-caps">From recent trips</p>
             <h2 className="mt-5 text-display-md text-ink">
-              What travellers said{" "}
-              <em className="editorial text-terracotta">afterwards.</em>
+              What travellers said after their{" "}
+              <em className="editorial text-terracotta">Varanasi trip.</em>
             </h2>
           </div>
         </ScrollReveal>

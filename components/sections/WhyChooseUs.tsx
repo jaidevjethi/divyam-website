@@ -37,8 +37,8 @@ export function WhyChooseUs() {
             <div className="lg:col-span-12">
               <p className="label-caps">How the service actually works</p>
               <h2 className="mt-5 text-display-md text-ink">
-                Practical things travellers tell us{" "}
-                <em className="editorial">made the trip easy.</em>
+                Why travellers book a{" "}
+                <em className="editorial">local Varanasi driver.</em>
               </h2>
             </div>
           </div>

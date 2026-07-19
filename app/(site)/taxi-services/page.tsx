@@ -71,7 +71,7 @@ export default function TaxiServicesPage() {
         eyebrow="Tourist taxi · Varanasi"
         title={
           <>
-            Private taxi service{" "}
+            Private taxi service in Varanasi,{" "}
             <em className="editorial">built around tourist routes.</em>
           </>
         }

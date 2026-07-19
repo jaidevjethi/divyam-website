@@ -50,8 +50,8 @@ export function ServiceOverview() {
             <div className="lg:col-span-5">
               <p className="label-caps">What we run</p>
               <h2 className="mt-5 text-display-md text-ink">
-                Services built around how tourists{" "}
-                <em className="editorial">actually move</em> in Varanasi.
+                Taxi and tour services across{" "}
+                <em className="editorial">Varanasi and beyond.</em>
               </h2>
             </div>
             <div className="lg:col-span-6 lg:col-start-7 self-end">

@@ -18,8 +18,8 @@ export function PackageSpotlight() {
             <div className="lg:col-span-7">
               <p className="label-caps">Sample plans</p>
               <h2 className="mt-5 text-display-md text-ink">
-                Starting points,{" "}
-                <em className="editorial">not catalogue packages.</em>
+                Varanasi tour packages,{" "}
+                <em className="editorial">shaped to your group.</em>
               </h2>
             </div>
             <div className="lg:col-span-5 self-end">
