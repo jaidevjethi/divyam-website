@@ -33,8 +33,6 @@ export default function HomePage() {
       <ServiceOverview />
       <JourneyLine className="w-full h-10 sm:h-14 text-terracotta" />
       <PopularRoutes />
-      {/* Soft seam: parchment -> ivory */}
-      <div aria-hidden className="h-24 bg-gradient-to-b from-cream-deep to-cream" />
       <VehicleSelector />
       <EditorialBand
         src="/images/band-river.webp"
@@ -43,11 +41,11 @@ export default function HomePage() {
       />
       <WhyChooseUs />
       <InternationalTravelers />
-      {/* Soft seam: parchment -> espresso (into the dark story band) */}
-      <div aria-hidden className="h-28 bg-gradient-to-b from-cream-deep to-walnut" />
+      {/* The dark story band meets its neighbours on a clean edge. A fade
+          between cream-deep and walnut is impossible to do well: both are
+          low-chroma, so the midpoint is always a grey haze that fights the
+          warm palette. The terracotta CTA band works the same way. */}
       <VisualStory />
-      {/* Soft seam: espresso -> ivory */}
-      <div aria-hidden className="h-28 bg-gradient-to-b from-walnut to-cream" />
       <PackageSpotlight />
       <Testimonials />
       <FAQTeaser />
