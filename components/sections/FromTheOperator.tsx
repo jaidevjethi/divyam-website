@@ -10,8 +10,11 @@ export function FromTheOperator() {
       <Container width="default">
         <div className="grid-12">
           
-          {/* Left rail — operator photo + label */}
-          <div className="lg:col-span-3">
+          {/* Left rail — operator photo + label.
+              Below lg the rail drops BELOW the letter. Stacked in source
+              order it put a third photo directly under the two hero images,
+              so the section opened with a picture instead of its message. */}
+          <div className="lg:col-span-3 order-2 lg:order-1 mt-12 lg:mt-0">
             <ScrollReveal>
               <div className="img-wrap relative aspect-square w-full max-w-[220px] overflow-hidden rounded-xl border border-line/40 shadow-sm">
                 <Image
@@ -22,8 +25,10 @@ export function FromTheOperator() {
                   className="object-cover"
                 />
               </div>
-              <p className="label-caps mt-6">A note from us</p>
-              <div className="mt-3 w-10 h-px bg-line-strong" />
+              {/* The eyebrow leads the section on lg; below that it is
+                  rendered above the letter instead, so it is hidden here. */}
+              <p className="label-caps mt-6 hidden lg:block">A note from us</p>
+              <div className="mt-3 w-10 h-px bg-line-strong hidden lg:block" />
               <p className="mt-3 text-[14px] text-ink-soft font-serif italic font-medium">
                 Divyam Tours · Varanasi
               </p>
@@ -31,7 +36,8 @@ export function FromTheOperator() {
           </div>
 
           {/* Right — letter */}
-          <div className="lg:col-span-9 max-w-3xl">
+          <div className="lg:col-span-9 max-w-3xl order-1 lg:order-2">
+            <p className="label-caps mb-5 lg:hidden">A note from us</p>
             <ScrollReveal delay={0.1}>
               <p className="pull-quote text-[clamp(1.35rem,2vw,1.8rem)] text-ink leading-[1.35] drop-cap">
                 We are a small taxi service that drives tourists around Varanasi.

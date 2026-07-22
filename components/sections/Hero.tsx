@@ -115,8 +115,12 @@ export function Hero() {
         </div>
       </Container>
 
-      {/* Full-bleed cinematic photo band */}
-      <div className="parallax-band relative mt-16 sm:mt-20 aspect-[21/9] sm:aspect-[24/9] w-full">
+      {/* Full-bleed cinematic photo band.
+          Hidden below md: at phone width this letterboxes down to a ~200px
+          sliver directly beneath the hero portrait, which reads as a second
+          photo rather than a cinematic beat. Being lazy, it is not even
+          downloaded there. Tablet and up keep the full-width moment. */}
+      <div className="parallax-band relative mt-16 sm:mt-20 aspect-[21/9] sm:aspect-[24/9] w-full hidden md:block">
         <div className="parallax-inner">
           <Image
             src={business.heroImage}
