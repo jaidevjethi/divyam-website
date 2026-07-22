@@ -27,7 +27,7 @@ const story = [
   },
   {
     src: "/images/story-3-2.webp",
-    alt: "Priests raising fire lamps at the evening Ganga aarti",
+    alt: "Crowds filling the steps at Dashashwamedh Ghat for the evening Ganga aarti, seen from a boat on the river",
     when: "Evening",
     caption:
       "Dashashwamedh Ghat fills for the 6:45 aarti. The drop is coordinated to land you in time for a seat.",
