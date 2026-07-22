@@ -36,9 +36,91 @@ const story = [
 
 export function VisualStory() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [reducedMotion, setReducedMotion] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+  const blockRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  /**
+   * Which slide is showing is decided by ONE rule: whichever text block's
+   * centre sits nearest the centre of the viewport. Exactly one block can win,
+   * so there is no ambiguity when a boundary between two blocks is on screen.
+   *
+   * This deliberately does not use a per-block IntersectionObserver. That
+   * approach kept re-creating its observers whenever the active index changed,
+   * and a re-created observer immediately re-fires, so the active slide ended
+   * up decided by callback ordering rather than by what was actually centred.
+   *
+   * The measuring listener is attached only while the section is on screen,
+   * and the whole thing is skipped below `lg`, where the layout is a plain
+   * stack with no sticky frame.
+   */
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+
+    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReducedMotion(motionQuery.matches);
+    const onMotionChange = () => setReducedMotion(motionQuery.matches);
+    motionQuery.addEventListener("change", onMotionChange);
+
+    const desktop = window.matchMedia("(min-width: 1024px)");
+
+    let frame = 0;
+    let listening = false;
+
+    const measure = () => {
+      frame = 0;
+      const middle = window.innerHeight / 2;
+      let nearest = 0;
+      let smallest = Infinity;
+      blockRefs.current.forEach((el, i) => {
+        if (!el) return;
+        const rect = el.getBoundingClientRect();
+        const distance = Math.abs((rect.top + rect.bottom) / 2 - middle);
+        if (distance < smallest) {
+          smallest = distance;
+          nearest = i;
+        }
+      });
+      setActiveIndex(nearest);
+    };
+
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(measure);
+    };
+
+    const startListening = () => {
+      if (listening || !desktop.matches) return;
+      listening = true;
+      window.addEventListener("scroll", onScroll, { passive: true });
+      window.addEventListener("resize", onScroll, { passive: true });
+      measure();
+    };
+
+    const stopListening = () => {
+      if (!listening) return;
+      listening = false;
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+
+    // Only pay the scroll cost while this section is actually on screen.
+    const gate = new IntersectionObserver(
+      ([entry]) => (entry.isIntersecting ? startListening() : stopListening()),
+      { rootMargin: "10% 0px 10% 0px" },
+    );
+    gate.observe(section);
+
+    return () => {
+      gate.disconnect();
+      stopListening();
+      motionQuery.removeEventListener("change", onMotionChange);
+      if (frame) cancelAnimationFrame(frame);
+    };
+  }, []);
 
   return (
-    <section className="section bg-walnut text-cream relative">
+    <section ref={sectionRef} className="section bg-walnut text-cream relative">
       <Container width="wide">
         <ScrollReveal>
           <div className="mb-14 lg:mb-2 max-w-3xl">
@@ -73,11 +155,12 @@ export function VisualStory() {
           {/* Desktop Layout (Sticky Scroll) */}
           <div className="hidden lg:block lg:col-span-5 lg:col-start-7 lg:pb-[20vh]">
             {story.map((s, i) => (
-              <StoryTextBlock 
-                key={i} 
-                s={s} 
-                index={i} 
-                onInView={(idx) => setActiveIndex(idx)} 
+              <StoryTextBlock
+                key={i}
+                s={s}
+                blockRef={(el) => {
+                  blockRefs.current[i] = el;
+                }}
                 isActive={activeIndex === i}
               />
             ))}
@@ -90,7 +173,10 @@ export function VisualStory() {
                 key={i}
                 className={cn(
                   "absolute inset-0 transition-all duration-1000 ease-[cubic-bezier(0.25,0.1,0.25,1.0)]",
-                  activeIndex === i ? "opacity-100 z-10 scale-100" : "opacity-0 z-0 scale-105"
+                  activeIndex === i ? "opacity-100 z-10" : "opacity-0 z-0",
+                  // The cross-fade is content (it shows which moment); the
+                  // scale is decoration, so only the scale is dropped.
+                  reducedMotion ? "scale-100" : activeIndex === i ? "scale-100" : "scale-105"
                 )}
               >
                 <Image src={s.src} alt={s.alt} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
@@ -104,27 +190,18 @@ export function VisualStory() {
   );
 }
 
-function StoryTextBlock({ s, index, onInView, isActive }: { s: (typeof story)[number], index: number, onInView: (i: number) => void, isActive: boolean }) {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          onInView(index);
-        }
-      },
-      { rootMargin: "-45% 0px -45% 0px" }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-    return () => observer.disconnect();
-  }, [index, onInView]);
-
+/** Presentational only. The parent measures these blocks and owns the state. */
+function StoryTextBlock({
+  s,
+  blockRef,
+  isActive,
+}: {
+  s: (typeof story)[number];
+  blockRef: (el: HTMLDivElement | null) => void;
+  isActive: boolean;
+}) {
   return (
-    <div ref={ref} className="h-[75vh] flex flex-col justify-center pr-12 transition-opacity duration-700">
+    <div ref={blockRef} className="h-[75vh] flex flex-col justify-center pr-12 transition-opacity duration-700">
       <p className={cn(
         "text-[13px] tracking-[0.25em] uppercase font-bold mb-5 transition-colors duration-500",
         isActive ? "text-marigold" : "text-marigold/30"
